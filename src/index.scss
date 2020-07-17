@@ -1,15 +1,3 @@
-.markdown code {
-  padding: 0 0.5em;
-  color: #0086b3;
-  background: #fafafa;
-}
+@import './assets/styles/init.scss';
 
-.markdown .language-html,
-.language-js,
-.language-css,
-.language-c {
-  display: block;
-  padding: 10px;
-  border-radius: 10px;
-  color: #383a42;
-}
+@import './assets/styles/md.scss';

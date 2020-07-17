@@ -1,0 +1,40 @@
+@import './color.scss';
+
+.markdown {
+  color: #444;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  padding: 30px 0;
+  code {
+    padding: 0 10px;
+    color: $main;
+    background: #fafafa;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  img {
+    display: block;
+    object-fit: center;
+    margin: 0 auto;
+  }
+
+  p {
+    text-indent: 2rem;
+  }
+
+  .language-html,
+  .language-js,
+  .language-css,
+  .language-c {
+    font-weight: 500 !important;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: #383a42;
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+}
