@@ -1,0 +1,33 @@
+@import '../../../assets/styles/color.scss';
+
+.menu-pane {
+  width: 48%;
+  padding: 80px 0;
+  text-align: center;
+  background-color: $second;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  overflow: hidden;
+  .menu-hover-modal {
+    background-color: $dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform ease 0.5s;
+    color: $light;
+  }
+}
+
+.menu-pane:hover {
+  .menu-hover-modal {
+    transform: translateY(0);
+  }
+}
