@@ -39,7 +39,7 @@
         "error",
         "after"
       ],
-      "react/no-array-index-key": 1,
+      "react/no-array-index-key": 2,
       "comma-dangle": 0
     },
     "env": {

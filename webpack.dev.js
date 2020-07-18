@@ -21,7 +21,8 @@ module.exports = {
     port: 3000,
     open: true,
     // 启用hmr
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   // 配置source map,提示错误代码的准确信息
   // eval-source-map / eval-cheap-module-source-map

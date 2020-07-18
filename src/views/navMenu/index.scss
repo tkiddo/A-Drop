@@ -1,7 +1,13 @@
 @import '../../assets/styles/color.scss';
 
 .menu-title {
-  padding-top: 150px;
   font-size: 40px;
   color: $main;
+  margin-bottom: 20px;
+  padding-top: 150px;
+}
+
+.menu-sub-title {
+  color: $light;
+  font-size: 26px;
 }

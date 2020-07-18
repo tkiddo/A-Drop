@@ -6,6 +6,8 @@
   text-align: center;
   background-color: $second;
   margin: 10px 0;
+  color: $dark;
+  font-weight: 500;
   cursor: pointer;
   font-size: 30px;
   position: relative;
@@ -22,7 +24,10 @@
     align-items: center;
     transform: translateY(100%);
     transition: transform ease 0.5s;
+    word-wrap: break-word;
+    word-break: break-all;
     color: $light;
+    padding: 0 20px;
   }
 }
 
