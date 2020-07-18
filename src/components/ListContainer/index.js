@@ -2,6 +2,7 @@ import React from 'react';
 // eslint-disable-next-line import/no-unresolved
 import './index.scss';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const mapStateToProps = ({ markdown }) => ({
   markdown
@@ -12,11 +13,14 @@ const ListContainer = (props) => {
     match: { params },
     markdown: { all }
   } = props;
-  const visiable = all.filter((item) => item.meta === params.filter);
+
+  const visiableList = all.filter((item) => item.meta === params.filter);
   return (
     <>
-      {visiable.map((item) => (
-        <div key={item.title}>{item.title}</div>
+      {visiableList.map((item) => (
+        <Link key={item.name} to={`/md/${item.path}`}>
+          {item.name}
+        </Link>
       ))}
     </>
   );

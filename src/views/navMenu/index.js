@@ -6,8 +6,8 @@ import MenuPane from '../../components/Menu/MenuPane';
 const NavMenu = () => {
   const menu = [
     {
-      name: 'Javascript',
-      info: 'Javascript,Typescript,React ...'
+      name: 'JavaScript',
+      info: 'JavaScript,TypeScript,React ...'
     },
     {
       name: 'CSS',

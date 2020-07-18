@@ -178,7 +178,7 @@ module.exports = {
             exclude: /node_modules/
           },
           {
-            exclude: /\.(css|less|scss|js|html|jpg|png|gif|md)$/,
+            exclude: /\.(css|less|scss|js|html|jpg|png|gif|md|json)$/,
             use: [
               {
                 loader: 'file-loader',

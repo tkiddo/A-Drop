@@ -109,7 +109,7 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        exclude: /\.(css|less|scss|js|html|jpg|png|gif|md)$/,
+        exclude: /\.(css|less|scss|js|html|jpg|png|gif|md|json)$/,
         use: [
           {
             loader: 'file-loader',
@@ -139,7 +139,9 @@ module.exports = {
       favicon: './public/favicon.ico'
     }),
     new AddAssetHtmlPlugin({
-      filepath: path.resolve(__dirname, 'dll/react.js')
+      filepath: path.resolve(__dirname, 'dll/react.js'),
+      outputPath: 'js',
+      publicPath: './js'
     })
   ]
 };

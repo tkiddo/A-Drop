@@ -1,5 +1,5 @@
 import { SELECT } from './constant';
-import data from './data';
+import data from '../../assets/mock/data.json';
 
 const initialState = {
   all: data,

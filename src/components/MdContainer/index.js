@@ -1,7 +1,18 @@
-import React from 'react';
+// eslint-disable
+import React, { lazy, Suspense } from 'react';
 import './index.scss';
 
-// eslint-disable-next-line react/destructuring-assignment
-const MdContainer = (props) => <div>{props.children}</div>;
+const MdContainer = (props) => {
+  const {
+    match: { params }
+  } = props;
+  const path = params.path.replace(/_/g, '/');
+  const Md = lazy(() => import(`../../md/${path}`));
+  return (
+    <Suspense fallback={<div className="modal-loading">loading...</div>}>
+      <Md></Md>
+    </Suspense>
+  );
+};
 
 export default React.memo(MdContainer);
