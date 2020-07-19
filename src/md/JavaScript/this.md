@@ -1,4 +1,4 @@
-#### this 指向什么
+# this 指向什么
 
 - JavaScript 中，任何函数本质上是通过对象来调用的，如果没有直接指定，就是`window`对象
 
@@ -27,16 +27,16 @@ obj.foo(); //2,this指向obj
 var c = new foo(); //undefined，this指向c
 ```
 
-#### 如何确定 this 的值
+## 如何确定 this 的值
 
-this 值的指向基本可以分为以下 4 种情况：
+`this` 值的指向基本可以分为以下 4 种情况：
 
 - `fn()`:直接调用函数，此时`this`指向`window`
-- `obj.fn()`:通过对象调用，此时 this 指向当前调用该函数的对象
-- `new fn()`:通过 new 创建对象，此时 this 指向创建的对象
-- `fn.call(obj)`,fn.apply(obj):call,apply 将 this 指向改成 obj
+- `obj.fn()`:通过对象调用，此时 `this` 指向当前调用该函数的对象
+- `new fn()`:通过 `new` 创建对象，此时 `this` 指向创建的对象
+- `fn.call(obj)`,`fn.apply(obj):call,apply` 将 `this` 指向改成 obj
 
-#### 综合例子
+## 综合例子
 
 ```js
 function Person(color) {

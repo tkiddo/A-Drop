@@ -4,7 +4,8 @@ Vue 的响应式系统是基于`Object.defineProperty`实现的，所以先来�
 在 MDN 上，可以非常明确地看到其作用和用法。**`Object.defineProperty()` 方法会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性， 并返回这个对象。**
 **语法**：`Object.defineProperty(obj, prop, descriptor)`
 其中，`obj`是要在其上定义属性的对象。`prop`是要定义或修改的属性的名称。`descriptor`是将被定义或修改的属性描述符。
-前两个参数比较好理解，至于第三个参数**属性描述符**，参见 MDN：[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+前两个参数比较好理解，至于第三个参数**属性描述符**，参见 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+
 Vue 中使用的是**存取描述符**,有以下四个属性：
 
 - `configurable`:为`true`时，该属性能够修改，默认为`false`
@@ -145,5 +146,4 @@ function defineReactive(obj, key, val) {
 </html>
 ```
 
-![控制台.jpg](https://upload-images.jianshu.io/upload_images/13613564-3a76d320de61a285.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 _Bingo!_

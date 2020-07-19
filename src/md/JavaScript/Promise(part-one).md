@@ -1,8 +1,10 @@
-#### JavaScript 中的异步回调
+# Promise(一)
+
+## JavaScript 中的异步回调
 
 在 JavaScript 中，所有代码都是单线程执行的。由于这个原因，很多情况下都需要异步操作。比如一些耗时的操作，无需等待操作完成，即可运行接下来的代码，等操作完成时执行相应的回调操作，ajax 就是典型的例子
 
-```javascript
+```js
 console.log('before setTimeout');
 setTimeout(() => {
   console.log('callback done');
@@ -10,7 +12,7 @@ setTimeout(() => {
 console.log('after setTimeout');
 ```
 
-#### Promise
+## Promise
 
 根据 MDN 的解释，一个  `Promise`  就是一个代表了异步操作最终完成或者失败的对象。
 
@@ -18,7 +20,7 @@ console.log('after setTimeout');
 
 `promise`本质上是一个绑定了回调的对象，而不是将回调传进函数内部。resolve 和 reject 函数被调用时，分别将`promise`的状态改为 fulfilled（完成）或 rejected（失败）。executor 内部通常会执行一些异步操作，一旦完成，可以调用 resolve 函数来将`promise`状态改成 fulfilled，或者在发生错误时将它的状态改为 rejected。
 
-```javascript
+```js
 let p = new Promise((resolve, reject) => {
   setTimeout(() => {
     let num = Math.random() * 10;
@@ -38,7 +40,7 @@ p.then((res) => {
 
 **将普通异步函数封装成 Promise** 1.原生 ajax 封装成`promise`
 
-```javascript
+```js
 let jsGetAjaxPromise = (params) => {
   return new Promise((resolve, reject) => {
     let xhr = new XMLHttpRequest();
@@ -50,7 +52,7 @@ let jsGetAjaxPromise = (params) => {
 };
 
 let p1 = jsGetAjaxPromise({
-  url: `${baseUrl}/api/Shops`
+  url: baseUrl + '/api/Shops'
 });
 
 p1.then((res) => {
@@ -62,7 +64,7 @@ p1.then((res) => {
 
 2.小程序`wx.request`封装成`promise`
 
-```javascript
+```js
 /* wx.js */
 export const wxPromise = (params) => {
   return new Promise((resolve, reject) => {
@@ -82,7 +84,7 @@ export const wxPromise = (params) => {
 /* 使用 */
 import { wxPromise } from 'wx.js';
 wxPromise({
-  url: `${baseUrl}/api/Shops`
+  url: baseUrl + '/api/Shops'
 })
   .then((res) => {
     console.log(res);

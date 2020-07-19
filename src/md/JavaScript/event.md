@@ -1,4 +1,4 @@
-## 事件流
+# 事件流
 
 事件，就是文档或者浏览器与用户的交互瞬间。简单地说，就是当用户操作时，比如点击按钮，浏览器做出相应的回应。所谓事件流，就是页面中事件接收的顺序。目前，主要有两种事件流，事件冒泡流和事件捕获流。
 
@@ -17,21 +17,21 @@
 </html>
 ```
 
-#### 事件冒泡
+## 事件冒泡
 
 事件冒泡的意思是事件从最具体的元素开始接收，然后逐级向上传播到不太具体的元素(或者是文档)。 例子中，如果你单击了 id 为 box 的 div，其事件的传播轨迹是 div>body>html>document
-![事件冒泡.jpg](https://upload-images.jianshu.io/upload_images/13613564-89cfe8c06ba39e3f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![事件冒泡.jpg](./media/md/event-bubble.png)
 
-#### 事件捕获
+## 事件捕获
 
 事件捕获的意思是事件从最不具体的元素（或者文档）就开始接收，然后逐级向里层具体的元素传播。同样，如果你单击了 id 为 box 的 div，其事件的传播轨迹是 document>html>body>div
-![事件捕获.jpg](https://upload-images.jianshu.io/upload_images/13613564-b4538a38a69a98e6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![事件捕获.jpg](./media/md/event-catch.png)
 **尽管“DOM2 级事件”规范要求事件应该从 document 对象开始传播，但大部分浏览器都是从 window 对象开始捕获事件的**
 
-#### 事件流
+## 事件流
 
 "DOM2 级事件"规定事件流分为三个阶段：**事件捕获阶段，处于目标阶段，事件冒泡阶段**。首先发生的是事件捕获，为截获事件提供了机会。然后是实际的目标接收到事件。最后一个阶段是冒泡阶段，可以在这个阶段对事件做出响应。
-![事件流.jpg](https://upload-images.jianshu.io/upload_images/13613564-f30ae2984e5cb234.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![事件流.jpg](./media/md/event-stream.png)
 
 为了更加清晰直观地理解事件，下面通过具体案例来讲解：
 
@@ -74,7 +74,8 @@
 ```
 
 ```js
-//addEventListener最后这个布尔值参数如果是 true，表示在捕获阶段调用事件处理程序；如果是 false，表示在冒泡阶段调用事件处理程序。默认为false
+//addEventListener最后这个布尔值参数如果是 true，表示在捕获阶段调用事件处理程序；
+//如果是 false，表示在冒泡阶段调用事件处理程序。默认为false
 let capture = true;
 window.addEventListener(
   'click',
@@ -116,10 +117,10 @@ inner[0].addEventListener(
 );
 ```
 
-![事件案例.jpg](https://upload-images.jianshu.io/upload_images/13613564-8084e2089434e26b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![事件案例.jpg](./media/md/event-demo.png)
 `addEventListener`最后这个布尔值参数如果是`true`，表示**在捕获阶段调用事件处理程序**；如果是`false`，表示**在冒泡阶段调用事件处理程序**。默认为`false`。
 当`capture`为`true`时，采用的是捕获事件流,即事件从外向里传播，当我们点击最里层的`div`，控制台输出如图所示：
-![事件捕获案例.jpg](https://upload-images.jianshu.io/upload_images/13613564-a461cc3f41cc577d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![事件捕获案例.jpg](./media/md/event-catch-demo.png)
 当`capture`为`false`时，采用的是冒泡事件流,即事件从里向外传播，当我们点击最里层的`div`，控制台输出如图所示：
-![事件冒泡案例.jpg](https://upload-images.jianshu.io/upload_images/13613564-812ab7a56ff5112a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![事件冒泡案例.jpg](./media/md/event-bubble-demo.png)
 由于老版本的浏览器不支持，因此很少有人使用事件捕获。我们也建议读者放心地使用事件冒泡，在有特殊需要时再使用事件捕获。

@@ -6,7 +6,7 @@
 let person = {
   name: 'king',
   greet: function () {
-    console.log(`hello,${this.name}`);
+    console.log('hello,' + this.name);
   }
 };
 //hello,king
@@ -27,7 +27,7 @@ person.greet.apply(person2); //hello,sara
 let person = {
   name: 'king',
   greet: function (str) {
-    console.log(`${str},${this.name}`);
+    console.log(str, this.name);
   }
 };
 let person2 = { name: 'sara' };

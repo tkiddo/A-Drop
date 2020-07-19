@@ -1,4 +1,4 @@
-## 事件循环机制
+# 事件循环机制
 
 Javascript 是单线程执行的，出现异步时，并不会阻塞 JS 的执行，而是接着往下执行，等到异步结果返回时再处理。对于这些异步的执行任务，就依靠 JS 的事件循环机制，即 EventLoop。
 JS 中的任务，可以分为宏任务（macrotask）和微任务（microtask）。这两种任务分别由两个队列来维护，这两个队列都遵循先进先出的机制。
@@ -77,6 +77,6 @@ console.log('script end'); //11.整体代码执行，输出script end
 16. 当前宏任务执行完毕，查看微任务队列，没有微任务，则继续执行下一个宏任务，输出`setImmediate`
     所以执行结果是：`script start，async1 start，async2，promise1，script end，process，async1 end，promise2，settimeout，setImmediate`
 
-#### 优先级：
+## 优先级：
 
 `process.nextTick()>Promise.then()>setTimeout>setImmediate`。

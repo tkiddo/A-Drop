@@ -44,5 +44,5 @@ console.log(Foo.prototype.age, foo.age); //10,12  ,原型对象中age属性值�
 
 ## 图解原型链
 
-![原型链图解.png](https://upload-images.jianshu.io/upload_images/13613564-4e300fa0f1f247cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![原型链图解.png](./media/md/prototype-chain.png)
 其中 0xxxx 为内存地址值，左侧为栈内存，右侧为堆内存

@@ -9,8 +9,9 @@ Ajax 是一种在无需重新加载整个网页的情况下，能够更新部分
 ## 原生实现
 
 1. 获取`XMLHttpRequest`对象
-   使用`XMLHttpRequest（XHR）`对象可以与服务器交互。您可以从 URL 获取数据，而无需让整个的页面刷新。这允许网页在不影响用户的操作的情况下更新页面的局部内容。在 AJAX 编程中，`XMLHttpRequest` 被大量使用。
-   更多详情请移步 MDN：https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest
+
+使用`XMLHttpRequest（XHR）`对象可以与服务器交互。您可以从 URL 获取数据，而无需让整个的页面刷新。这允许网页在不影响用户的操作的情况下更新页面的局部内容。在 AJAX 编程中，`XMLHttpRequest` 被大量使用。
+更多详情请移步 MDN：https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest
 
 ```js
 let xhr;
@@ -24,19 +25,20 @@ if (window.XMLHttpRequest) {
 ```
 
 2. 配置请求参数
-   `XMLHttpRequest`对象的`open`方法用于配置参数，第一个参数为请求方法，第二个参数是请求地址，第三个参数是是否异步请求，默认为`true`
+
+`XMLHttpRequest`对象的`open`方法用于配置参数，第一个参数为请求方法，第二个参数是请求地址，第三个参数是是否异步请求，默认为`true`
 
 ```js
 xhr.open('GET', '/test/', true);
 ```
 
-3. 配置完毕，用 send 方法发送请求
+3. 配置完毕，用 `send` 方法发送请求
 
 ```js
 xhr.send();
 ```
 
-4. 监听服务器返回状态并对返回数据进行处理,onreadystatechange 事件用于监听
+4. 监听服务器返回状态并对返回数据进行处理,`onreadystatechange` 事件用于监听
 
 ```js
 xhr.onreadystatechange = function () {
@@ -52,8 +54,9 @@ xhr.onreadystatechange = function () {
 };
 ```
 
-**关于 readystate 和 status**
-1.readystate 有 5 种值，分别为：
+## 关于 readystate 和 status
+
+1. `readystate` 有 5 种值，分别为：
 
 - 0: 请求未初始化
 - 1: 服务器连接已建立
@@ -61,7 +64,7 @@ xhr.onreadystatechange = function () {
 - 3: 请求处理中
 - 4: 请求已完成，且响应已就绪
 
-  2.status 可以分为 5 类，分别为：
+2. `status` 可以分为 5 类，分别为：
 
 - 1xx: 这一类型的状态码，代表请求已被接受，需要继续处理。这类响应是临时响应，只包含状态行和某些可选的响应头信息，并以空行结束
 - 2xx:这一类型的状态码，代表请求已成功被服务器接收、理解、并接受。例如 200 标识 OK
@@ -69,7 +72,7 @@ xhr.onreadystatechange = function () {
 - 4xx:这类的状态码代表了客户端看起来可能发生了错误，妨碍了服务器的处理。例如 404 Not Found
 - 5xx，6xx：这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。例如 500 Internal Server Error
 
-完整的实现代码是：
+### 完整的实现代码是：
 
 ```js
 let xhr;
