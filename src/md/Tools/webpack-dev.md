@@ -104,11 +104,11 @@ module: {
               return '[contenthash].[ext]';
             },
             //目标文件夹
-            outputPath: 'media',
-          },
-        },
-      ],
-    },
+            outputPath: 'media'
+          }
+        }
+      ]
+    }
   ];
 }
 ```
@@ -160,8 +160,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist'),
     //gzip压缩
     compress: true,
-    port: 3000,
-  },
+    port: 3000
+  }
 };
 ```
 
@@ -185,7 +185,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   mode: 'development',
   //配置开发服务器
@@ -193,21 +193,21 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist'),
     //gzip压缩
     compress: true,
-    port: 3000,
+    port: 3000
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [...CssCommonLoader],
+        use: [...CssCommonLoader]
       },
       {
         test: /\.less$/,
-        use: [...CssCommonLoader, 'less-loader'],
+        use: [...CssCommonLoader, 'less-loader']
       },
       {
         test: /\.s[ac]ss$/,
-        use: [...CssCommonLoader, 'sass-loader'],
+        use: [...CssCommonLoader, 'sass-loader']
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -216,23 +216,20 @@ module.exports = {
             loader: 'url-loader',
             options: {
               name(resourcePath, resourceQuery) {
-                // `resourcePath` - `/absolute/path/to/file.js`
-                // `resourceQuery` - `?foo=bar`
-
                 if (process.env.NODE_ENV === 'development') {
                   return '[path][name].[ext]';
                 }
                 return '[contenthash].[ext]';
               },
               outputPath: 'media',
-              limit: 8 * 1024,
-            },
-          },
-        ],
+              limit: 8 * 1024
+            }
+          }
+        ]
       },
       {
         test: /\.html$/,
-        loader: 'html-loader',
+        loader: 'html-loader'
       },
       {
         exclude: /\.(css|less|scss|js|html|jpg|png|gif)$/,
@@ -241,18 +238,18 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'static',
-            },
-          },
-        ],
-      },
-    ],
+              outputPath: 'static'
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './public/index.html'
     }),
-    new CleanWebpackPlugin(),
-  ],
+    new CleanWebpackPlugin()
+  ]
 };
 ```

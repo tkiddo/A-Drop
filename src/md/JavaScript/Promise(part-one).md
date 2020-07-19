@@ -13,7 +13,9 @@ console.log('after setTimeout');
 #### Promise
 
 根据 MDN 的解释，一个  `Promise`  就是一个代表了异步操作最终完成或者失败的对象。
+
 **语法**
+
 `promise`本质上是一个绑定了回调的对象，而不是将回调传进函数内部。resolve 和 reject 函数被调用时，分别将`promise`的状态改为 fulfilled（完成）或 rejected（失败）。executor 内部通常会执行一些异步操作，一旦完成，可以调用 resolve 函数来将`promise`状态改成 fulfilled，或者在发生错误时将它的状态改为 rejected。
 
 ```javascript

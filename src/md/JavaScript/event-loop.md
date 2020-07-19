@@ -75,7 +75,7 @@ console.log('script end'); //11.整体代码执行，输出script end
 14. 微任务队列清空后，查看宏任务队列，为`[console.log("settimeout"),console.log("setImmediate")]`
 15. `setTimeout`的优先级高于`setImmediate`，所以先取出`setTimeout`宏任务并执行，输出`settimeout`
 16. 当前宏任务执行完毕，查看微任务队列，没有微任务，则继续执行下一个宏任务，输出`setImmediate`
-    所以执行结果是：`script start，async1 start，async2，promise1，script end，process，async1 end，promise2，settimeout，setImmediate`<br>
+    所以执行结果是：`script start，async1 start，async2，promise1，script end，process，async1 end，promise2，settimeout，setImmediate`
 
 #### 优先级：
 

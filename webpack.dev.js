@@ -106,7 +106,8 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: 'html-loader',
+        exclude: /md/
       },
       {
         exclude: /\.(css|less|scss|js|html|jpg|png|gif|md|json)$/,

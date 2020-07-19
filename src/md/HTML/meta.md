@@ -16,7 +16,10 @@
 - 移动段适配
 
 ```html
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,max-scale=1" />
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1,user-scalable=no,max-scale=1"
+/>
 ```
 
 content 参数：

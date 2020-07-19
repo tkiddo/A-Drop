@@ -1,4 +1,4 @@
-## Ajax 原生实现
+# Ajax 原生实现
 
 来自百度百科：Ajax 即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML），是指一种创建交互式网页应用的网页开发技术。
 Ajax = 异步 JavaScript 和 XML 或者是 HTML（标准通用标记语言的子集）。
@@ -6,11 +6,11 @@ Ajax 是一种用于创建快速动态网页的技术。
 Ajax 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。
 通过在后台与服务器进行少量数据交换，Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
 
-#### 原生实现
+## 原生实现
 
-1.获取`XMLHttpRequest`对象
-使用`XMLHttpRequest（XHR）`对象可以与服务器交互。您可以从 URL 获取数据，而无需让整个的页面刷新。这允许网页在不影响用户的操作的情况下更新页面的局部内容。在 AJAX 编程中，`XMLHttpRequest` 被大量使用。
-更多详情请移步 MDN：https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest
+1. 获取`XMLHttpRequest`对象
+   使用`XMLHttpRequest（XHR）`对象可以与服务器交互。您可以从 URL 获取数据，而无需让整个的页面刷新。这允许网页在不影响用户的操作的情况下更新页面的局部内容。在 AJAX 编程中，`XMLHttpRequest` 被大量使用。
+   更多详情请移步 MDN：https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest
 
 ```js
 let xhr;
@@ -23,20 +23,20 @@ if (window.XMLHttpRequest) {
 }
 ```
 
-2.配置请求参数
-`XMLHttpRequest`对象的`open`方法用于配置参数，第一个参数为请求方法，第二个参数是请求地址，第三个参数是是否异步请求，默认为`true`
+2. 配置请求参数
+   `XMLHttpRequest`对象的`open`方法用于配置参数，第一个参数为请求方法，第二个参数是请求地址，第三个参数是是否异步请求，默认为`true`
 
 ```js
 xhr.open('GET', '/test/', true);
 ```
 
-3.配置完毕，用 send 方法发送请求
+3. 配置完毕，用 send 方法发送请求
 
 ```js
 xhr.send();
 ```
 
-4.监听服务器返回状态并对返回数据进行处理,onreadystatechange 事件用于监听
+4. 监听服务器返回状态并对返回数据进行处理,onreadystatechange 事件用于监听
 
 ```js
 xhr.onreadystatechange = function () {

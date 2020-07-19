@@ -1,4 +1,4 @@
-#### call，apply 应用场景
+# call，apply 应用场景
 
 首先，来看下面这一个例子：
 
@@ -9,7 +9,8 @@ let person = {
     console.log(`hello,${this.name}`);
   }
 };
-person.greet(); //hello,king
+//hello,king
+person.greet();
 ```
 
 现在，有另一个对象 person2，`let person2={name:'sara'}`。如果他也想调用 greet 方法，那么可以这么实现：为 person2 添加方法，指向 person 的 greet 方法，即`person2.greet=person.greet`。然而，person2 仅仅是临时需要调用 greet 方法，这样重新为 person2 定义 greet 方法显得不是很有必要，这时候就需要 call 或者 apply 出场了。

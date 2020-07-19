@@ -47,7 +47,7 @@ function cb() {
 </html>
 ```
 
-我们给 new 的 Vue 对象传入一个包含`data`属性的对象，我们要达到的效果是当`data`中的任一属性值发生变化时，视图更新，即调用`cb`函数。<br>
+我们给 new 的 Vue 对象传入一个包含`data`属性的对象，我们要达到的效果是当`data`中的任一属性值发生变化时，视图更新，即调用`cb`函数。
 
 2. 接下来，定义`defineReactive`函数,
 
@@ -71,7 +71,7 @@ function defineReactive(obj, key, val) {
 }
 ```
 
-这段代码中，形参`obj`表示需要捆绑的对象，`key`表示`obj`的一个属性名，`val`表示属性值。在经过`defineReactive`处理后，我们在访问`obj`的属性时，会调用`getter`方法，在更改属性时会调用`setter`方法。<br>
+这段代码中，形参`obj`表示需要捆绑的对象，`key`表示`obj`的一个属性名，`val`表示属性值。在经过`defineReactive`处理后，我们在访问`obj`的属性时，会调用`getter`方法，在更改属性时会调用`setter`方法。
 
 3. 然后，我们需要为 data 的每一个属性都进行**响应式**处理。
 
@@ -84,7 +84,7 @@ function observe(obj) {
 }
 ```
 
-其中，`Object.keys(obj)`返回 obj 的属性名组成的数组。<br>
+其中，`Object.keys(obj)`返回 obj 的属性名组成的数组。
 
 4. 整合起来，就是这样的：
 

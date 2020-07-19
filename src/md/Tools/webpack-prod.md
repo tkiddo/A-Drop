@@ -22,19 +22,19 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.less$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
       },
       {
         test: /\.s[ac]ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-      },
-    ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+      }
+    ]
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [new MiniCssExtractPlugin()]
 };
 ```
 
@@ -52,11 +52,7 @@ yarn add postcss-loader postcss-preset-env --dev
 //package.json
 {
   "browerslist": {
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"],
     "production": [">0.2%", "not dead", "not op_mini all"]
   }
 }
@@ -76,21 +72,21 @@ module.exports = {
             options: {
               //配置路径寻找从当前目录的上一级开始
               publicPath: '../',
-              hmr: process.env.NODE_ENV === 'development',
-            },
+              hmr: process.env.NODE_ENV === 'development'
+            }
           },
           'css-loader',
           {
             loader: 'postcss-loader',
             options: {
               ident: 'postcss',
-              plugins: () => [require('postcss-preset-env')()],
-            },
-          },
-        ],
-      },
-    ],
-  },
+              plugins: () => [require('postcss-preset-env')()]
+            }
+          }
+        ]
+      }
+    ]
+  }
 };
 ```
 
@@ -104,7 +100,7 @@ yarn add optimize-css-assets-webpack-plugin --dev
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
   //...
-  plugins: [new OptimizeCssAssetsPlugin()],
+  plugins: [new OptimizeCssAssetsPlugin()]
 };
 ```
 
@@ -154,11 +150,11 @@ module.exports = {
         loader: 'eslint-loader',
         options: {
           //自动修复
-          fix: true,
-        },
-      },
-    ],
-  },
+          fix: true
+        }
+      }
+    ]
+  }
 };
 ```
 
@@ -183,8 +179,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'eslint-loader',
       options: {
-        fix: true,
-      },
+        fix: true
+      }
     },
     {
       test: /\.js$/,
@@ -201,15 +197,15 @@ module.exports = {
                 useBuiltIns: 'usage',
                 corejs: {
                   version: '3.6',
-                  proposals: true,
-                },
-              },
-            ],
-          ],
-        },
-      },
-    },
-  ],
+                  proposals: true
+                }
+              }
+            ]
+          ]
+        }
+      }
+    }
+  ]
 };
 ```
 
@@ -233,10 +229,10 @@ module.exports = {
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
         removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true,
-      },
-    }),
-  ],
+        useShortDoctype: true
+      }
+    })
+  ]
 };
 ```
 
@@ -258,24 +254,24 @@ const CssCommonLoader = [
     options: {
       // 配置路径寻找从当前目录的上一级开始
       publicPath: '../',
-      hmr: process.env.NODE_ENV === 'development',
-    },
+      hmr: process.env.NODE_ENV === 'development'
+    }
   },
   'css-loader',
   {
     loader: 'postcss-loader',
     options: {
       ident: 'postcss',
-      plugins: () => [PostcssPresetEnv()],
-    },
-  },
+      plugins: () => [PostcssPresetEnv()]
+    }
+  }
 ];
 
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   mode: 'production',
   // 配置开发服务器
@@ -283,7 +279,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist'),
     // gzip压缩
     compress: true,
-    port: 3000,
+    port: 3000
   },
   module: {
     rules: [
@@ -293,8 +289,8 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'eslint-loader',
         options: {
-          fix: true,
-        },
+          fix: true
+        }
       },
       {
         test: /\.js$/,
@@ -309,25 +305,25 @@ module.exports = {
                   useBuiltIns: 'usage',
                   corejs: {
                     version: '3.6',
-                    proposals: true,
-                  },
-                },
-              ],
-            ],
-          },
-        },
+                    proposals: true
+                  }
+                }
+              ]
+            ]
+          }
+        }
       },
       {
         test: /\.css$/,
-        use: [...CssCommonLoader],
+        use: [...CssCommonLoader]
       },
       {
         test: /\.less$/,
-        use: [...CssCommonLoader, 'less-loader'],
+        use: [...CssCommonLoader, 'less-loader']
       },
       {
         test: /\.s[ac]ss$/,
-        use: [...CssCommonLoader, 'sass-loader'],
+        use: [...CssCommonLoader, 'sass-loader']
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -337,23 +333,20 @@ module.exports = {
             options: {
               // eslint-disable-next-line no-unused-vars
               name(resourcePath, resourceQuery) {
-                // `resourcePath` - `/absolute/path/to/file.js`
-                // `resourceQuery` - `?foo=bar`
-
                 if (process.env.NODE_ENV === 'development') {
                   return '[path][name].[ext]';
                 }
                 return '[contenthash].[ext]';
               },
               outputPath: 'media',
-              limit: 8 * 1024,
-            },
-          },
-        ],
+              limit: 8 * 1024
+            }
+          }
+        ]
       },
       {
         test: /\.html$/,
-        loader: 'html-loader',
+        loader: 'html-loader'
       },
       {
         exclude: /\.(css|less|scss|js|html|jpg|png|gif)$/,
@@ -362,12 +355,12 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'static',
-            },
-          },
-        ],
-      },
-    ],
+              outputPath: 'static'
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -379,14 +372,14 @@ module.exports = {
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
         removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true,
-      },
+        useShortDoctype: true
+      }
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
+      filename: 'css/[name].css'
     }),
     new CleanWebpackPlugin(),
-    new OptimizeCssAssetsPlugin(),
-  ],
+    new OptimizeCssAssetsPlugin()
+  ]
 };
 ```
