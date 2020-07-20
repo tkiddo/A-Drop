@@ -1,4 +1,9 @@
-# call，apply 应用场景
+---
+title: call,apply
+description: javascript中call和apply的应用场景及原理实现
+---
+
+# call，apply 
 
 首先，来看下面这一个例子：
 
@@ -21,7 +26,7 @@ person.greet.call(person2); //hello,sara
 person.greet.apply(person2); //hello,sara
 ```
 
-其实 call 和 apply 的用处是一样的，就是让对象临时调用本不属于自己的方法，而不用为自身添加该方法。两者的不同在于调用的时候传参的形式，call 以单个参数依次传入，apply 以数组的方式传入，以上 greet 方法没有形参，所以不能体现出不同。以上例子稍作修改即可体现：
+其实 `call` 和 `apply` 的用处是一样的，就是让对象临时调用本不属于自己的方法，而不用为自身添加该方法。两者的不同在于调用的时候传参的形式，`call` 以单个参数依次传入，`apply` 以数组的方式传入，以上 greet 方法没有形参，所以不能体现出不同。以上例子稍作修改即可体现：
 
 ```js
 let person = {
@@ -35,7 +40,7 @@ person.greet.call(person2, 'hi'); //hi,sara
 person.greet.apply(person2, ['hi']); //hi,sara
 ```
 
-#### 模拟实现原理
+## 模拟实现原理
 
 ```js
 Function.prototype.call2 = function (context) {
