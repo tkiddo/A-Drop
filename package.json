@@ -2,7 +2,7 @@
   "name": "a-drop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/dist/",
+  "homepage": "/A-Drop/",
   "description": "a drop in my career as a front-end developer",
   "scripts": {
     "initJson": "node ./src/getFile.js",
