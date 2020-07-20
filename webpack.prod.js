@@ -101,10 +101,7 @@ module.exports = {
               {
                 loader: 'sliver-md-loader',
                 options: {
-                  mode: 'react',
-                  markdown: {
-                    xhtmlOut: true
-                  }
+                  mode: 'react'
                 }
               }
             ]
@@ -210,10 +207,6 @@ module.exports = {
           globOptions: {
             ignore: ['index.html']
           }
-        },
-        {
-          from: path.resolve(__dirname, 'src/assets/images/md'),
-          to: path.resolve(__dirname, 'dist/media/md')
         }
       ]
     }),
