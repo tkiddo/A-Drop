@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[66],{215:function(n,e,t){const c=t(0);n.exports=function(n){Object.keys(n).forEach((function(e){this[e]=n[e]}));return c.createElement("section",{className:"markdown"},c.createElement("h2",null,"前端路由实现原理"))}}}]);
-//# sourceMappingURL=66.cbdc7b2635.js.map

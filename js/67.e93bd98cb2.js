@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[67],{216:function(n,e,s){const t=s(0);n.exports=function(n){Object.keys(n).forEach((function(e){this[e]=n[e]}));return t.createElement("section",{className:"markdown"},t.createElement("h4",null,"组件应用全局样式"),t.createElement("pre",null,t.createElement("code",{className:"language-js",dangerouslySetInnerHTML:{__html:'Component({\n\t<span class="hljs-attr">options</span>:{\n\t\t<span class="hljs-attr">addGlobalClass</span>:<span class="hljs-literal">true</span>\n\t}\n})\n'}})))}}}]);
-//# sourceMappingURL=67.e93bd98cb2.js.map
