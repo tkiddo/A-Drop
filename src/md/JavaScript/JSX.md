@@ -1,30 +1,47 @@
-#### JSX
+---
+title: JSX
+description: JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式比较像是模版语言，但事实上完全是在 JavaScript 内部实现的。
+---
+
+# JSX
+
 `JSX`是一种`JavaScript`的语法扩展，运用于`React`架构中，其格式比较像是模版语言，但事实上完全是在`JavaScript`内部实现的。我们能在`React`中直接编写`JSX`代码，得益于[babel](https://www.babeljs.cn/)的转译,比如：
-````html
-<div className='box'>
+
+```html
+<div className="box">
   <span>test</span>
   <span>{test}</span>
 </div>
-````
-转译后：
-````js
-/*#__PURE__*/
-React.createElement("div", {
-  className: "box"
-}, /*#__PURE__*/React.createElement("span", null, "test"), /*#__PURE__*/React.createElement("span", null, test));
-````
-也就是说转译之后默认会调用`React.createElement()`方法。这也侧面说明了即使你再写函数组件的时候没有显示地引用`React`,也必须先`import React from 'react'`
-#### `React.createElement()`
-这里精简了方法的实现原理，并作了相关注释
-````js
+```
 
+转译后：
+
+```js
+/*#__PURE__*/
+React.createElement(
+  'div',
+  {
+    className: 'box'
+  },
+  /*#__PURE__*/ React.createElement('span', null, 'test'),
+  /*#__PURE__*/ React.createElement('span', null, test)
+);
+```
+
+也就是说转译之后默认会调用`React.createElement()`方法。这也侧面说明了即使你再写函数组件的时候没有显示地引用`React`,也必须先`import React from 'react'`
+
+## `React.createElement()`
+
+这里精简了方法的实现原理，并作了相关注释
+
+```js
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /*
-*@param {*} type 元素类型，或是组件类名
-*@param {*} config 元素属性
-*@param {*} children 子元素
-*/
+ *@param {*} type 元素类型，或是组件类名
+ *@param {*} config 元素属性
+ *@param {*} children 子元素
+ */
 
 function createElement(type, config, children) {
   let propName;
@@ -34,10 +51,7 @@ function createElement(type, config, children) {
   //循环遍历config中的属性，并添加为props的属性
   if (config != null) {
     for (propName in config) {
-      if (
-        hasOwnProperty.call(config, propName) &&
-        !RESERVED_PROPS.hasOwnProperty(propName)
-      ) {
+      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
         props[propName] = config[propName];
       }
     }
@@ -87,10 +101,8 @@ function createElement(type, config, children) {
       }
     }
   } */
-  return ReactElement(
-    type,
-    props,
-  );
+  return ReactElement(type, props);
 }
-````
-小结：`JSX`转译之后其实是一个`ReactElement`对象，虚拟DOM其实就是这样的一个JS对象。
+```
+
+小结：`JSX`转译之后其实是一个`ReactElement`对象，虚拟 DOM 其实就是这样的一个 JS 对象。

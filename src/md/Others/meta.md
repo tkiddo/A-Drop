@@ -1,6 +1,11 @@
-## meta 标签的常见应用
+---
+title: meta 标签的常见应用
+description: meta 标签 HTML 语言 head 区域的一个辅助性标签，常用于定义页面的说明，关键字等元数据。
+---
 
-### meta 标签
+# meta 标签的常见应用
+
+## meta 标签
 
 `meta`标签 HTML 语言 head 区域的一个辅助性标签，常用于定义页面的说明，关键字等元数据。`meta`标签的属性有：`name,http-equiv,content,charset`,用法参见[MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
@@ -16,10 +21,7 @@
 - 移动段适配
 
 ```html
-<meta
-  name="viewport"
-  content="width=device-width,initial-scale=1,user-scalable=no,max-scale=1"
-/>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,max-scale=1" />
 ```
 
 content 参数：

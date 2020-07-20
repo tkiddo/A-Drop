@@ -1,12 +1,17 @@
-#### 官方文档小程序登录流程的介绍
+---
+title: 小程序登录
+description: 即先发起 wx.login 请求，得到 code 后经第三方服务器想微信服务器发送请求获取 openid，assessToken 等敏感信息，这里我们需要以 assessToken 作为登录状态保持的依据。
+---
 
-![api-login.jpg](https://upload-images.jianshu.io/upload_images/13613564-74e783a5e23065c6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+## 小程序登录流程
+
+![api-login.jpg](../../assets/images/md/wxapp-login.jpg)
 
 即先发起 wx.login 请求，得到 code 后经第三方服务器想微信服务器发送请求获取 openid，assessToken 等敏感信息，这里我们需要以 assessToken 作为登录状态保持的依据。
 
 ####基于 token 的登录状态情况分类 1.首次登录小程序，本地存储中还不存在 token，即需要发起登录请求得到 token，并存到本地存储 2.小程序本地存储中已存在 token，但是已过期，即需要再次发起登录请求以获得 token，并覆盖掉本地存储中原先的 token 3.小程序本地存储中存在 token 且有效，即保持登录状态
 
-#### 代码实现
+## 代码实现
 
 ```javascript
 //引入插件，使微信api支持promise

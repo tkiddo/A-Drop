@@ -38,12 +38,17 @@
   .language-html,
   .language-js,
   .language-css,
-  .language-c {
+  .language-c,
+  .language-Shell {
     font-weight: 500 !important;
     display: block;
     padding: 10px;
     border-radius: 10px;
     color: #383a42;
+  }
+
+  .language-Shell {
+    color: $dark;
   }
 
   hr {

@@ -9,7 +9,7 @@ description: webpack production
 
 `style-loader`会把 css 样式以`style节点`的形式加入到 html 标签中，实际开发中可能需要将 css 分离成单独文件，需要用到`mini-css-extract-plugin`插件
 
-```
+```Shell
 yarn add mini-css-extract-plugin --dev
 ```
 
@@ -47,7 +47,7 @@ module.exports = {
 
 `postcss-loader`+`postcss-preset-env`
 
-```
+```Shell
 yarn add postcss-loader postcss-preset-env --dev
 ```
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ## css 压缩
 
-```
+```Shell
 yarn add optimize-css-assets-webpack-plugin --dev
 ```
 
@@ -113,9 +113,11 @@ module.exports = {
 
 `eslint-loader`,依赖于`eslint`;主流规则配置：`eslint-config-airbnb`(包含 react) `eslint-config-airbnb-base`(不包含 react)
 
-```
+```Shell
 yarn add eslint-loader eslint --dev
-yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y --dev
+
+yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-react
+eslint-plugin-react-hooks eslint-plugin-jsx-a11y --dev
 ```
 
 配置：
@@ -167,7 +169,7 @@ module.exports = {
 
 `babel-loader`,`@babel/preset-env`,`core-js`
 
-```
+```Shell
 yarn add babel-loader @babel/preset-env core-js --dev
 ```
 

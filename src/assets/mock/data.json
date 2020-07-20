@@ -137,26 +137,6 @@
 		"description": null
 	},
 	{
-		"meta": "HTML",
-		"path": "HTML_image-layout.md",
-		"name": "image-layout.md"
-	},
-	{
-		"meta": "HTML",
-		"path": "HTML_image-preview.md",
-		"name": "image-preview.md"
-	},
-	{
-		"meta": "HTML",
-		"path": "HTML_meta.md",
-		"name": "meta.md"
-	},
-	{
-		"meta": "HTML",
-		"path": "HTML_svg.md",
-		"name": "svg.md"
-	},
-	{
 		"meta": "JavaScript",
 		"path": "JavaScript_ajax.md",
 		"name": "ajax.md",
@@ -230,6 +210,13 @@
 		"name": "JSON.md",
 		"title": "JSON",
 		"description": "JSON(Javascript Object Notation,Javascript 对象表示法),是 JavaScript 的一个严格的子集，利用了 JavaScript 中的一些模式来表示结构化数据结构。"
+	},
+	{
+		"meta": "JavaScript",
+		"path": "JavaScript_JSX.md",
+		"name": "JSX.md",
+		"title": "JSX",
+		"description": "JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式比较像是模版语言，但事实上完全是在 JavaScript 内部实现的。"
 	},
 	{
 		"meta": "JavaScript",
@@ -330,9 +317,74 @@
 		"description": "Vue 的响应式系统是基于Object.defineProperty实现的，所以先来了解Object.defineProperty是非常有必要的。"
 	},
 	{
-		"meta": "React",
-		"path": "React_JSX.md",
-		"name": "JSX.md"
+		"meta": "Others",
+		"path": "Others_cache.md",
+		"name": "cache.md",
+		"title": "WEB 缓存",
+		"description": "为什么要缓存"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_global-style-in-component.md",
+		"name": "global-style-in-component.md",
+		"title": "组件应用全局样式",
+		"description": "addGlobalClass"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_HTTP-basic.md",
+		"name": "HTTP-basic.md",
+		"title": "HTTP 基本知识",
+		"description": "网址，准确地说是 URL（Uniform Resource Locator，统一资源定位符）。"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_image-layout.md",
+		"name": "image-layout.md",
+		"title": "HTML 中有关图片处理的几种情况",
+		"description": "背景大图,图片在固定宽高的框中居中显示..."
+	},
+	{
+		"meta": "Others",
+		"path": "Others_image-preview.md",
+		"name": "image-preview.md",
+		"title": "前端实现图片预览",
+		"description": "在选择图片文件后，能即时预览图片"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_meta.md",
+		"name": "meta.md",
+		"title": "meta 标签的常见应用",
+		"description": "meta 标签 HTML 语言 head 区域的一个辅助性标签，常用于定义页面的说明，关键字等元数据。"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_svg.md",
+		"name": "svg.md",
+		"title": "SVG",
+		"description": "可缩放矢量图形（Scalable Vector Graphics，SVG），是一种用于描述基于二维的矢量图形的，基于 XML 的标记语言。"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_token-login.md",
+		"name": "token-login.md",
+		"title": "小程序登录",
+		"description": "即先发起 wx.login 请求，得到 code 后经第三方服务器想微信服务器发送请求获取 openid，assessToken 等敏感信息，这里我们需要以 assessToken 作为登录状态保持的依据。"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_var-in-css.md",
+		"name": "var-in-css.md",
+		"title": "wxss中运用css变量",
+		"description": "--main-color:green;"
+	},
+	{
+		"meta": "Others",
+		"path": "Others_wxapp-router-params.md",
+		"name": "wxapp-router-params.md",
+		"title": "小程序路由参数",
+		"description": "在页面 onLoad 时获取..."
 	},
 	{
 		"meta": "Tools",
@@ -375,55 +427,5 @@
 		"name": "webpack-prod.md",
 		"title": "webpack 生产环境配置",
 		"description": "webpack production"
-	},
-	{
-		"meta": "Unix",
-		"path": "Unix_file-management.md",
-		"name": "file-management.md"
-	},
-	{
-		"meta": "Unix",
-		"path": "Unix_getting-started.md",
-		"name": "getting-started.md"
-	},
-	{
-		"meta": "Web",
-		"path": "Web_cache.md",
-		"name": "cache.md"
-	},
-	{
-		"meta": "Web",
-		"path": "Web_HTTP-basic.md",
-		"name": "HTTP-basic.md"
-	},
-	{
-		"meta": "Web",
-		"path": "Web_meta.md",
-		"name": "meta.md"
-	},
-	{
-		"meta": "Web",
-		"path": "Web_router.md",
-		"name": "router.md"
-	},
-	{
-		"meta": "wxapp",
-		"path": "wxapp_global-style-in-component.md",
-		"name": "global-style-in-component.md"
-	},
-	{
-		"meta": "wxapp",
-		"path": "wxapp_token-login.md",
-		"name": "token-login.md"
-	},
-	{
-		"meta": "wxapp",
-		"path": "wxapp_var-in-css.md",
-		"name": "var-in-css.md"
-	},
-	{
-		"meta": "wxapp",
-		"path": "wxapp_wxapp-router-params.md",
-		"name": "wxapp-router-params.md"
 	}
 ]

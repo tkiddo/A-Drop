@@ -1,6 +1,11 @@
-## WEB 缓存
+---
+title: WEB 缓存
+description: 为什么要缓存
+---
 
-#### 为什么要缓存
+# WEB 缓存
+
+## 为什么要缓存
 
 - 请求更快：通过将内容缓存在本地浏览器或距离最近的缓存服务器（如 CDN），在不影响网站交互的前提下可以大大加快网站加载速度。
 
@@ -73,9 +78,9 @@ HTTP1.1 中 Etag 解决了上述问题。
 ## 浏览器请求流程图
 
 第一次请求：
-![first-request.png](https://github.com/justforfunmy/Notebook/blob/master/md/Web/images/first-request.png)
+![first-request.png](../../assets/images/md/first-request.png)
 再次请求：
-![request-again.png](https://github.com/justforfunmy/Notebook/blob/master/md/Web/images/request-again.png)
+![request-again.png](../../assets/images/md/request-again.png)
 
 ## 缓存最佳实践
 
@@ -88,18 +93,18 @@ HTTP1.1 中 Etag 解决了上述问题。
 1. 对静态文件设置缓存:
 
 ```js
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 app.use(
-	express.static(path.join(__dirname, 'public'), {
-		maxAge: 31536000,
-	})
-)
+  express.static(path.join(__dirname, 'public'), {
+    maxAge: 31536000
+  })
+);
 ```
 
 此处需要在更新静态资源内容的同时更新`URL`，`webpack`可以让我们在打包的时候，在文件的命名上带上`hash`值,就像这样：
 
-![cache.jpg](https://github.com/justforfunmy/Notebook/blob/master/md/Web/images/cache.jpg)
+![cache.jpg](../../assets/images/md/cache.jpg)
 
 2. 对单一请求设置缓存：
 
