@@ -1,3 +1,10 @@
+---
+title: css条纹
+description: 实现方法：CSS 线性渐变
+---
+
+# css条纹
+
 实现方法：CSS 线性渐变
 `linear-gradient()` 函数用于创建一个表示两种或多种颜色线性渐变的图片。
 `linear-gradient([ [ [ <angle> | to <side-or-corner> ],]? <color-stop>[, <color-stop>]+);`

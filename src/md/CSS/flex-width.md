@@ -1,4 +1,11 @@
-#### 举个例子：左边元素定宽，右边元素占满余下部分
+---
+title: flex布局
+description: 举个例子：左边元素定宽，右边元素占满余下部分
+---
+
+# flex布局
+
+## 举个例子：左边元素定宽，右边元素占满余下部分
 
 ```html
 <!DOCTYPE html>
@@ -36,7 +43,7 @@
 </html>
 ```
 
-#### 关于 flex 容器内元素的 flex 属性的解释
+## 关于 flex 容器内元素的 flex 属性的解释
 
 flex 属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 1 auto。后两个属性可选。
 

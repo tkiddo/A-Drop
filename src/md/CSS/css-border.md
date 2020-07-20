@@ -1,4 +1,11 @@
-#### 1.默认情况下，背景会延伸至边框所在的区域下层。
+---
+title: 你不知道的css边框
+description: css边框的更多秘密
+---
+
+# 你不知道的css边框
+
+## 1.默认情况下，背景会延伸至边框所在的区域下层。
 
 **案例**：半透明边框没有出现
 
@@ -17,7 +24,7 @@
 **解决办法**：`background-clip`,初始值为`border-box`,即背景会被元素的`border-box`裁切掉，如果不希望背景入侵边框所在的范围，就把它的值设定为`padding-box`,以上代码取消注释即可，效果是这样的：
 ![半透明边框出现.jpg](https://upload-images.jianshu.io/upload_images/13613564-c33ef44d9860f4e2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 2.多重边框
+## 2.多重边框
 
 **实现方法**：`box-shadow`,`outline`(仅两层边框)
 
@@ -79,7 +86,7 @@ box-shadow: h-shadow v-shadow blur spread color inset;
 
 ![outline实现双边框和缝线效果.jpg](https://upload-images.jianshu.io/upload_images/13613564-3087b0b193674961.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 3.边框内圆角
+## 3.边框内圆角
 
 **实现：**利用 outline 不会跟着元素的圆角走，但 box-shadow 会跟着圆角走来实现。
 

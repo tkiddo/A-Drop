@@ -1,4 +1,12 @@
+---
+title: BFC
+description: 块格式化上下文（Block Formatting Context，BFC） 是 Web 页面的可视化 CSS 渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域
+---
+
+# BFC
+
 MDN：块格式化上下文（Block Formatting Context，BFC） 是 Web 页面的可视化 CSS 渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域。 块格式化上下文包含创建它的元素内部的所有内容。
+
 创建 BFC 是为了形成一个完全独立的空间，让空间中的子元素不会影响到外面的布局.
 MDN 中列举了所有可以创建 BFC 的方式，以下是比较常用的方式：
 
@@ -8,8 +16,12 @@ MDN 中列举了所有可以创建 BFC 的方式，以下是比较常用的方�
 - 4.`display`值为`flow-root`,它可以创建无副作用的 BFC。
 - 5.行内块元素：`display`为`inline-block`。
 - 6.弹性元素,`display`为 `flex` 或 `inline-flex`元素的直接子元素
-  BFC 可以用来解决 css 中的许多问题： 1.浮动元素父元素高度坍塌
-  当父元素内的子元素浮动后，即子元素脱离了文档流，此时父元素的高度不能撑开，造成高度塌陷。
+
+BFC 可以用来解决 css 中的许多问题：
+
+1. 浮动元素父元素高度坍塌
+
+当父元素内的子元素浮动后，即子元素脱离了文档流，此时父元素的高度不能撑开，造成高度塌陷。
 
 ```css
 //css
@@ -59,7 +71,9 @@ MDN 中列举了所有可以创建 BFC 的方式，以下是比较常用的方�
 }
 ```
 
-![高度塌陷解决.jpg](https://upload-images.jianshu.io/upload_images/13613564-5a048e16a45de292.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 2.外边距垂直方向重合
+![高度塌陷解决.jpg](https://upload-images.jianshu.io/upload_images/13613564-5a048e16a45de292.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+
+2. 外边距垂直方向重合
 块级元素的上外边距和下外边距有时会合并（或折叠）为一个外边距，其大小取其中的最大者，这种行为称为外边距折叠（margin collapsing），有时也翻译为外边距合并。 注意浮动元素和绝对定位元素的外边距不会折叠。**外边距折叠（Margin collapsing）也只会发生在属于同一 BFC 的块级元素之间。**
 
 ```css
