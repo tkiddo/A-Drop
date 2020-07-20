@@ -1,3 +1,8 @@
+---
+title: git 更换远程仓库
+description: git remote origin set-url [url]
+---
+
 #### git 更换远程仓库
 
 1.修改命令

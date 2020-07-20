@@ -1,6 +1,6 @@
 ---
-title: 根据`Promises/A+`规范实现`Promise`
-description: `promise`构造器接收一个被称为执行器的函数，该函数会被传递两个函数作为参数，一个是成功时调用的函数`resolve`,一个是失败是调用的函数`reject`。
+title: 根据Promises/A+规范实现Promise
+description: promise构造器接收一个被称为执行器的函数，该函数会被传递两个函数作为参数，一个是成功时调用的函数resolve,一个是失败是调用的函数reject。
 ---
 
 # 根据`Promises/A+`规范实现`Promise`

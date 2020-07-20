@@ -7,10 +7,10 @@ const MdContainer = (props) => {
     match: { params }
   } = props;
   const path = params.path.replace(/_/g, '/');
-  const Md = lazy(() => import(`../../md/${path}`));
+	const Md = lazy(() => import(`../../md/${path}`));
   return (
     <Suspense fallback={<div className="modal-loading">loading...</div>}>
-      <Md></Md>
+      <Md />
     </Suspense>
   );
 };

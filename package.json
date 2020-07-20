@@ -5,7 +5,7 @@
   "homepage": "/dist/",
   "description": "a drop in my career as a front-end developer",
   "scripts": {
-		"initJson":"node ./src/getFile.js",
+    "initJson": "node ./src/getFile.js",
     "build": "webpack --progress --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
     "build-react": "webpack --progress --config webpack.react.js"
@@ -113,7 +113,7 @@
     "prettier-eslint": "^11.0.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
-    "sliver-md-loader": "^1.0.1",
+    "sliver-md-loader": "^1.0.3",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",

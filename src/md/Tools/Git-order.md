@@ -1,9 +1,17 @@
-#### 新建仓库
+---
+title: git 命令
+description: git 常用命令
+---
+
+
+# git 命令
+
+## 新建仓库
 
 - `git init`
   初始化:新建一个 git 仓库，创建后会自动生成.git 文件夹
 
-#### 配置
+## 配置
 
 - `git config --list`
   显示当前 git 设置
@@ -13,21 +21,21 @@
   `git config [--global] user.email "[email address]"`
   设置提交代码时的用户信息
 
-#### 添加和删除文件
+## 添加和删除文件
 
 - `git add [filename]`
   添加文件到暂存区，`git add .`添加所有文件到暂存区
 - `git rm [filename]`
   删除文件
 
-#### 代码提交
+## 代码提交
 
 - `git commit -m [message]`
   提交暂存区文件到仓库区
 - `git commit [file1] [file2] ... -m [message]`
   提交暂存区指定文件到仓库区
 
-#### 分支操作
+## 分支操作
 
 - `git branch`
   列出所有本地分支
@@ -46,7 +54,7 @@
 - `git branch -d [branch-name]`
   删除指定分支
 
-#### 信息查看
+## 信息查看
 
 - `git status`
   显示有变更的文件
@@ -57,7 +65,7 @@
 - `git diff`
   显示暂存区与工作区的不同
 
-#### 远程同步
+## 远程同步
 
 - `git fetch [remote]`
   下载远程仓库的所有变动
@@ -74,7 +82,7 @@
 - `git push [remote] --force`
   强行推送当前分支到远程仓库，即使有冲突
 
-#### 回退
+## 回退
 
 - `git reset [file]`
   重置暂存区的指定文件，与上一次 commit 保持一致，但工作区不变

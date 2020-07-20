@@ -1,3 +1,8 @@
+---
+title: webpack 生产环境配置
+description: webpack production
+---
+
 # webpack 生产环境配置
 
 ## 提取 css 为单独文件
