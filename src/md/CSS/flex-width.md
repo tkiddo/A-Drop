@@ -88,7 +88,7 @@ flex 属性是 `flex-grow`, `flex-shrink` 和 `flex-basis` 的简写，默认值
 </html>
 ```
 
-![1.png](./media/md/flex.png)
+![1.png](../../assets/images/md/flex.png)
 
 当给最后一个 box 加上 flex-box 的类，即设置 `flex:1`，则最后一个 box 会占据剩下空间，如果给每个 box 设置不同的 flex 值，则会按比例分配剩下的空间。
 
@@ -135,7 +135,7 @@ flex 属性是 `flex-grow`, `flex-shrink` 和 `flex-basis` 的简写，默认值
 </html>
 ```
 
-![2.png](./media/md/flex-2.png)
+![2.png](../../assets/images/md/flex-2.png)
 
 - `flex-shrink`
 
@@ -181,11 +181,11 @@ flex 属性是 `flex-grow`, `flex-shrink` 和 `flex-basis` 的简写，默认值
 ```
 
 1. 当设置 box 的 flex-shrink 为 0 时，即不论超出多少，都不压缩子元素的空间，如下图
-![3.png](./media/md/flex-3.png) 
+![3.png](../../assets/images/md/flex-3.png) 
 2. 当每个 box 设置 flex-shrink 为 1 时，即三个 box 压缩同样的比例，如下图
-![4.png](./media/md/flex-4.png) 
+![4.png](../../assets/images/md/flex-4.png) 
 3. 当给每个 box 设置 flex-shrink 依次为 1,2,3 时，子元素会按照比例来压缩，如图
-![5.png](./media/md/flex-5.png)
+![5.png](../../assets/images/md/flex-5.png)
 
 - `flex-basis`
 

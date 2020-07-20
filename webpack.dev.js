@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 const CssCommonLoader = ['style-loader', 'css-loader'];
@@ -126,14 +125,6 @@ module.exports = {
   plugins: [
     new webpack.DllReferencePlugin({
       manifest: path.resolve(__dirname, 'dll/manifest.json')
-    }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, 'src/assets/images/md'),
-          to: path.resolve(__dirname, 'dist/media/md')
-        }
-      ]
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

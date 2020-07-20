@@ -25,10 +25,10 @@ description: 当对一个文档进行布局（lay out）的时候，浏览器的
 在 chrome 开发者工具中选中`.box`的元素，可以发现该元素的实际宽度并不是设置的`100px`，而是`100+20*2+1*2=142px`,即包含内容区域，内边距，边框的总宽度。
 
 引用 chrome 中的盒子模型图：
-![盒模型content-box.jpg](./media/md/content-box.png)
+![盒模型content-box.jpg](../../assets/images/md/content-box.png)
 
 这点和我们平时的认知并不相符，此时就需要`box-sizing`这个属性。`box-sizing`的值是用来设定`width`,`height`的作用对象的，默认是`content-box`，即`width`作用域`content`区域，当把`box-sizing`设置为`border-box`，情况就不一样了，`width`的作用对象是`border`以内的区域。
 
 `box-sizing`设置为`border-box`后的盒子模型图：
-![盒模型border-box.jpg](./media/md/content-box.png)
+![盒模型border-box.jpg](../../assets/images/md/content-box.png)
 为了更加符合我们的认知，设置为`border-box`为最佳实践。

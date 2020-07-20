@@ -44,7 +44,7 @@ description: 浮动可以理解为让元素脱离标准文档流，漂浮于标�
 </html>
 ```
 
-![float](./media/md/float.jpg)
+![float](../../assets/images/md/float.jpg)
 
 # 关于清除浮动
 
@@ -67,7 +67,7 @@ description: 浮动可以理解为让元素脱离标准文档流，漂浮于标�
 }
 ```
 
-![float](./media/md/2-clear-left.png)
+![float](../../assets/images/md/2-clear-left.png)
 因为清除浮动只能影响元素本身，为了使第二个`div`左边没有浮动元素，又不能让第一个`div`改变位置，所以只能使自己向下移动一行。这里注意，即使给这个`div`清除右浮动，并不会有效果，因为它不能使后一个`div`改变位置，只能作用在自己身上。
 
 ## 关于父元素高度塌陷
@@ -95,4 +95,4 @@ description: 浮动可以理解为让元素脱离标准文档流，漂浮于标�
 }
 ```
 
-![height](./media/md/height.jpg)
+![height](../../assets/images/md/height.jpg)
