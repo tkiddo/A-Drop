@@ -1,3 +1,8 @@
+---
+title: this 指向什么
+description: JavaScript 中，任何函数本质上是通过对象来调用的，如果没有直接指定，就是`window`对象
+---
+
 # this 指向什么
 
 - JavaScript 中，任何函数本质上是通过对象来调用的，如果没有直接指定，就是`window`对象

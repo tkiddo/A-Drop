@@ -1,4 +1,9 @@
-## 简单实现 Vue 的响应式系统
+---
+title: 简单实现 Vue 的响应式系统
+description: Vue 的响应式系统是基于Object.defineProperty实现的，所以先来了解Object.defineProperty是非常有必要的。
+---
+
+# 简单实现 Vue 的响应式系统
 
 Vue 的响应式系统是基于`Object.defineProperty`实现的，所以先来了解`Object.defineProperty`是非常有必要的。
 在 MDN 上，可以非常明确地看到其作用和用法。**`Object.defineProperty()` 方法会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性， 并返回这个对象。**

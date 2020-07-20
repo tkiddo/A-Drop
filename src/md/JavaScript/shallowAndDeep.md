@@ -1,3 +1,8 @@
+---
+title: 浅拷贝与深拷贝
+description: JavaScript 中的数据类型主要分为原始数据类型（`Number，String，Boolean，Null，Undefined，Symbol`）和引用类型（`Object`）。深拷贝和浅拷贝主要是针对引用类型的，即在拷贝一个对象时，对于对象中属性值是对象的情况，浅拷贝复制的是对象的引用，深拷贝会复制对象的值。
+---
+
 # 浅拷贝与深拷贝
 
 JavaScript 中的数据类型主要分为原始数据类型（`Number，String，Boolean，Null，Undefined，Symbol`）和引用类型（`Object`）。深拷贝和浅拷贝主要是针对引用类型的，即在拷贝一个对象时，对于对象中属性值是对象的情况，浅拷贝复制的是对象的引用，深拷贝会复制对象的值。举个例子说，假设 B 复制了 A，如果 B 改变了，A 跟着改变，这就是浅拷贝，如果 B 改变了而 A 不改变，此时就是深拷贝。

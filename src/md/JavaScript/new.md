@@ -1,3 +1,8 @@
+---
+title: 原生 JS 实现 new 方法
+description: 原生 JS 实现 new 方法
+---
+
 # 原生 JS 实现 new 方法
 
 Javascript 中的`new`操作符实际上做了以下 4 件事情：

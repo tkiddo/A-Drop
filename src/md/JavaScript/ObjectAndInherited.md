@@ -1,3 +1,8 @@
+---
+title: 对象和继承
+description: JavaScript 中对象的创建方式有以下几种...
+---
+
 # 对象和继承
 
 JavaScript 中对象的创建方式有以下几种：

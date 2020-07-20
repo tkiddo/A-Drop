@@ -1,3 +1,9 @@
+---
+title: Error 类型
+description: javascript Error 类型
+---
+
+
 # Error 类型
 
 - `EvalError`
