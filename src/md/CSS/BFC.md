@@ -58,7 +58,7 @@ BFC 可以用来解决 css 中的许多问题：
 <div class="red">其他元素</div>
 ```
 
-![高度塌陷.jpg](https://upload-images.jianshu.io/upload_images/13613564-7d7e0ff852936457.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![高度塌陷.jpg](./media/md/hight-none.png)
 创建 BFC 可以解决，即让父元素成为 BFC，这样其子元素就不会对其他元素有影响。
 
 ```css
@@ -71,7 +71,7 @@ BFC 可以用来解决 css 中的许多问题：
 }
 ```
 
-![高度塌陷解决.jpg](https://upload-images.jianshu.io/upload_images/13613564-5a048e16a45de292.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![高度塌陷解决.jpg](./media/md/hight-none-fixed.png) 
 
 2. 外边距垂直方向重合
 块级元素的上外边距和下外边距有时会合并（或折叠）为一个外边距，其大小取其中的最大者，这种行为称为外边距折叠（margin collapsing），有时也翻译为外边距合并。 注意浮动元素和绝对定位元素的外边距不会折叠。**外边距折叠（Margin collapsing）也只会发生在属于同一 BFC 的块级元素之间。**

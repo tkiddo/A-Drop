@@ -45,7 +45,7 @@ description: 在使用简单的 skew()进行拉伸后，我们发现其容器的
 </html>
 ```
 
-![嵌套元素法实现平行四边形.jpg](https://upload-images.jianshu.io/upload_images/13613564-8c54f80c01296c50.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![嵌套元素法实现平行四边形](./media/md/parallel.png)
 
 - 伪元素法
   把与内容无关的样式应用到伪元素上，再对伪元素进行变形即可。

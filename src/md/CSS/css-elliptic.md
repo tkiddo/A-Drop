@@ -11,13 +11,13 @@ description: 对于border-radius，有一个鲜为人知的知识点：它可以
 1. 全椭圆
    以椭圆左上角为例，可以得到以下分析：
 
-![椭圆左上角分析.png](https://upload-images.jianshu.io/upload_images/13613564-b475c55a283e58d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![椭圆左上角分析](./media/md/elliptic-left-top.png)
 举一反三，其他三个角的水平半径和垂直半径都是高度或者宽度的 50%。转换为 css 代码，即`border-radius:50% 50% 50% 50% / 50% 50% 50% 50%`(顺序：左上角，右上角，右下角，左下角，顺时针方向)，简写`border-radius:50% / 50%`,再简写`border-radius:50%`
 
 2. 半椭圆
    以椭圆的上半个椭圆的左上角为例，可以得到以下分析：
 
-![半椭圆左上角分析.png](https://upload-images.jianshu.io/upload_images/13613564-9fc556c37215e721.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![半椭圆左上角分析](./media/md/half-elliptic-left-top.png)
 同样的方法，可以知道四个角的水平和垂直半径分别为`50%/100%,50%/100%,0/0,0/0`,即`border-radius:50% 50% 0 0 /100% 100% 0 0`
 
 四分之一椭圆也可以用同样的方法来实现，就不再赘述，以下贴上全部代码：
@@ -69,4 +69,4 @@ description: 对于border-radius，有一个鲜为人知的知识点：它可以
 ```
 
 效果：
-![所有效果.jpg](https://upload-images.jianshu.io/upload_images/13613564-8303273d256d303c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![所有效果.jpg](./media/md/elliptic-all.png)

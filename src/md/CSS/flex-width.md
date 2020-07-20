@@ -45,9 +45,9 @@ description: 举个例子：左边元素定宽，右边元素占满余下部分
 
 ## 关于 flex 容器内元素的 flex 属性的解释
 
-flex 属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 1 auto。后两个属性可选。
+flex 属性是 `flex-grow`, `flex-shrink` 和 `flex-basis` 的简写，默认值为 0 1 auto。后两个属性可选。
 
-- flex-grow
+- `flex-grow`
 
   flex-grow 定义对额外空间的占有量，默认 0，即表示有多余的空间也不要。
 
@@ -88,8 +88,9 @@ flex 属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 
 </html>
 ```
 
-![1.png](https://upload-images.jianshu.io/upload_images/13613564-e4d5a82c13789c8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-当给最后一个 box 加上 flex-box 的类，即设置 flex:1，则最后一个 box 会占据剩下空间，如果给每个 box 设置不同的 flex 值，则会按比例分配剩下的空间。
+![1.png](./media/md/flex.png)
+
+当给最后一个 box 加上 flex-box 的类，即设置 `flex:1`，则最后一个 box 会占据剩下空间，如果给每个 box 设置不同的 flex 值，则会按比例分配剩下的空间。
 
 ```html
 <!DOCTYPE html>
@@ -134,11 +135,11 @@ flex 属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 
 </html>
 ```
 
-![2.png](https://upload-images.jianshu.io/upload_images/13613564-9df7eea1d34f3ff7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![2.png](./media/md/flex-2.png)
 
-- flex-shrink
+- `flex-shrink`
 
-  和 flex-grow 相反，即当各个元素所占空间之和大于容器时，压缩每个元素的比例，默认是 1.如果没有显示定义该属性，将会自动按照默认值 1 在所有因子相加之后计算比率来进行空间收缩。
+  和 `flex-grow` 相反，即当各个元素所占空间之和大于容器时，压缩每个元素的比例，默认是 1.如果没有显示定义该属性，将会自动按照默认值 1 在所有因子相加之后计算比率来进行空间收缩。
 
 ```html
 <!DOCTYPE html>
@@ -179,16 +180,18 @@ flex 属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 
 </html>
 ```
 
-1.当设置 box 的 flex-shrink 为 0 时，即不论超出多少，都不压缩子元素的空间，如下图
-![3.png](https://upload-images.jianshu.io/upload_images/13613564-5801f72d239dcdd8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 2.当每个 box 设置 flex-shrink 为 1 时，即三个 box 压缩同样的比例，如下图
-![4.png](https://upload-images.jianshu.io/upload_images/13613564-0208796b24e54aab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 3.当给每个 box 设置 flex-shrink 依次为 1,2,3 时，子元素会按照比例来压缩，如图
-![5.png](https://upload-images.jianshu.io/upload_images/13613564-80fb6f12c9f5faa8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+1. 当设置 box 的 flex-shrink 为 0 时，即不论超出多少，都不压缩子元素的空间，如下图
+![3.png](./media/md/flex-3.png) 
+2. 当每个 box 设置 flex-shrink 为 1 时，即三个 box 压缩同样的比例，如下图
+![4.png](./media/md/flex-4.png) 
+3. 当给每个 box 设置 flex-shrink 依次为 1,2,3 时，子元素会按照比例来压缩，如图
+![5.png](./media/md/flex-5.png)
 
-- flex-basis
+- `flex-basis`
 
   表示在分配额外空间之前，成员占据的空间，默认值为 auto，意思就是你本来占多少就是多少。但也可以自己设置长度(px)。这个值的效果就是确定在释放和分配空间的时候，你的初值是多少,即 flex items 在被放进一个 flex 容器之前的大小
 
 - 常用值
 
-  flex：auto； 等同于 flex：1 1 auto; 意思就是占满额外空间，可缩放。
-  flex:none; 等同于 flex：0 0 auto； 意思是不占额外空间，不可缩放。
+  `flex：auto;` 等同于 `flex：1 1 auto;` 意思就是占满额外空间，可缩放。
+  `flex:none;` 等同于 `flex：0 0 auto;` 意思是不占额外空间，不可缩放。

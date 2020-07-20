@@ -20,9 +20,9 @@ description: css边框的更多秘密
 ```
 
 以上 css 样式在浏览器上的展示是这样子的，并没有出现半透明的边框：
-![半透明未出现.jpg](https://upload-images.jianshu.io/upload_images/13613564-bda3d69e5427546a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![半透明未出现](./media/md/border-not-show.png)
 **解决办法**：`background-clip`,初始值为`border-box`,即背景会被元素的`border-box`裁切掉，如果不希望背景入侵边框所在的范围，就把它的值设定为`padding-box`,以上代码取消注释即可，效果是这样的：
-![半透明边框出现.jpg](https://upload-images.jianshu.io/upload_images/13613564-c33ef44d9860f4e2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![半透明边框出现](./media/md/border-show.png)
 
 ## 2.多重边框
 
@@ -54,7 +54,7 @@ box-shadow: h-shadow v-shadow blur spread color inset;
 }
 ```
 
-![多重边框.jpg](https://upload-images.jianshu.io/upload_images/13613564-f58e0577522dbd0c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![多重边框](./media/md/multi-border.png)
 **注意**：
 
 1. 投影的行为和边框不完全一致，它不会影响布局，也不会收到 box-sizing 的影响
@@ -84,7 +84,7 @@ box-shadow: h-shadow v-shadow blur spread color inset;
 }
 ```
 
-![outline实现双边框和缝线效果.jpg](https://upload-images.jianshu.io/upload_images/13613564-3087b0b193674961.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![outline实现双边框和缝线效果](./media/md/outline-border.png)
 
 ## 3.边框内圆角
 
@@ -101,4 +101,4 @@ box-shadow: h-shadow v-shadow blur spread color inset;
 }
 ```
 
-![边框内圆角.png](https://upload-images.jianshu.io/upload_images/13613564-5eab729d8fca3062.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![边框内圆角](./media/md/border-in-radius.png)
