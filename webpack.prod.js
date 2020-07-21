@@ -56,7 +56,7 @@ module.exports = {
     port: 3000
   },
   // source-map / cheap-module-source-map
-  devtool: 'cheap-module-source-map',
+  // devtool: 'cheap-module-source-map',
   // 可以将node_modules中代码单独打包一个chunk输出
   optimization: {
     splitChunks: {
