@@ -1,3 +1,3 @@
 a-drop
 
-git subtree push --prefix=dist origin gh-pages
+[传送门](https://justforfunmy.github.io/A-Drop/#/)

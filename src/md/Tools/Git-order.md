@@ -3,7 +3,6 @@ title: git 命令
 description: git 常用命令
 ---
 
-
 # git 命令
 
 ## 新建仓库
@@ -88,3 +87,7 @@ description: git 常用命令
   重置暂存区的指定文件，与上一次 commit 保持一致，但工作区不变
 - `git reset --hard`
   重置暂存区与工作区，与上一次 commit 保持一致
+
+## 子项目
+
+- `git subtree push --prefix=dist origin gh-pages`
