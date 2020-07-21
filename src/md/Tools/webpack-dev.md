@@ -25,7 +25,7 @@ description: webpack 开发环境配置
 
 1. css 资源
 
-```
+```Shell
 yarn add css-loader style-loader --dev
 ```
 
@@ -46,7 +46,7 @@ module.exports = {
 
 2. less 资源
 
-```
+```Shell
 yarn add less-loader --dev
 ```
 
@@ -69,7 +69,7 @@ module.exports = {
 
 需要同时安装`sass-loader`和`sass`
 
-```
+```Shell
 yarn add sass sass-loader --dev
 ```
 
@@ -94,7 +94,7 @@ module.exports = {
 
 `url-loader`需要和`file-loader`一起安装
 
-```
+```Shell
 yarn add file-loader url-loader --dev
 ```
 
@@ -131,7 +131,7 @@ module.exports = {
 
 `url-loader`可以处理 js 和 css 中的引入文件，不能处理 html 中的引入资源,比如`<img src='a.png' />`,需要用到`html-loader`
 
-```
+```Shell
 yarn add html-loader --dev
 ```
 
@@ -176,7 +176,7 @@ module.exports = {
 
 ## 配置开发服务器
 
-```
+```Shell
 yarn add webpack-dev-server --dev
 ```
 

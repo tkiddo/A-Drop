@@ -3,17 +3,17 @@ title: git 更换远程仓库
 description: git remote origin set-url [url]
 ---
 
-#### git 更换远程仓库
+# git 更换远程仓库
 
 1.修改命令
 
-```
+```Shell
 git remote origin set-url [url]
 ```
 
 2.先删后加
 
-```
+```Shell
 git remote rm origin
 git remote add origin [url]
 ```

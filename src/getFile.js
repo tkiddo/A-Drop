@@ -23,7 +23,8 @@ function getJsonFiles(jsonPath) {
             path: fPath,
             name: item,
             title,
-            description
+            description,
+            ctime: stat.ctime
           });
         }
       }

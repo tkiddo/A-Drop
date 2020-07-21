@@ -13,7 +13,7 @@ description: Eslint+Prettier
 
 1. 使用 npm 或者 yarn 安装
 
-```
+```Shell
 npm install eslint --save-dev
 
 # or
@@ -23,7 +23,7 @@ yarn add eslint --dev
 
 2. 然后初始化配置文件
 
-```
+```Shell
 npx eslint --init
 ```
 
@@ -33,7 +33,7 @@ npx eslint --init
 
 [github 地址](https://github.com/standard/eslint-config-standard)
 
-```
+```Shell
 yarn add --dev eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
 ```
 
@@ -52,10 +52,12 @@ yarn add --dev eslint-config-standard eslint-plugin-standard eslint-plugin-promi
 
 ```json
 //.eslintrc.json
-"rules": {
+{
+	"rules": {
 		"no-var": "error", // preference for let and const only
 		"prefer-const": "error",
 		"eqeqeq": "warn" //  warn to use === instead of ==
+	}
 }
 ```
 
@@ -80,7 +82,7 @@ yarn add --dev eslint-config-standard eslint-plugin-standard eslint-plugin-promi
 
 1. 安装
 
-```
+```Shell
 yarn add prettier eslint-plugin-prettier eslint-config-prettier --dev
 ```
 
