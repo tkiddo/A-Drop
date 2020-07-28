@@ -1,6 +1,7 @@
 ---
 title: HTML 中有关图片处理的几种情况
 description: 背景大图,图片在固定宽高的框中居中显示...
+meta: HTML
 ---
 
 # HTML 中有关图片处理的几种情况

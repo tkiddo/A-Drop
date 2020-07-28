@@ -1,6 +1,7 @@
 ---
 title: HTTP 基本知识
 description: 网址，准确地说是 URL（Uniform Resource Locator，统一资源定位符）。
+meta: Web
 ---
 
 ## 从 URL 入手

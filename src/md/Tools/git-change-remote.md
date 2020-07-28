@@ -1,6 +1,7 @@
 ---
 title: git 更换远程仓库
 description: git remote origin set-url [url]
+meta: Git
 ---
 
 # git 更换远程仓库

@@ -1,6 +1,7 @@
 ---
 title: 什么是栈
 description: 栈（stack）又名堆栈，它是一种运算受限的线性表。限定仅在表尾进行插入和删除操作的线性表。
+meta: JavaScript
 ---
 
 # 什么是栈

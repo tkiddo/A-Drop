@@ -1,6 +1,7 @@
 ---
 title: React实现提取图片像素颜色值
 description: react canvas getImageData()
+meta: React
 ---
 
 # React 实现提取图片像素颜色值

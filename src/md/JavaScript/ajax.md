@@ -2,6 +2,7 @@
 
 title: Ajax 原生实现
 description: Ajax 即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML）
+meta: JavaScript
 
 ---
 

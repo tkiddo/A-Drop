@@ -1,6 +1,7 @@
 ---
 title: css实现椭圆
 description: 对于border-radius，有一个鲜为人知的知识点：它可以单独指定水平和垂直半径，只要用一个斜杠（/）分隔开就可以。实现椭圆就要用到这一点。
+meta: CSS
 ---
 
 # css实现椭圆

@@ -1,6 +1,7 @@
 ---
 title: 对象和继承
 description: JavaScript 中对象的创建方式有以下几种...
+meta: JavaScript
 ---
 
 # 对象和继承

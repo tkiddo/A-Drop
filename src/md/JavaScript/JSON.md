@@ -1,6 +1,7 @@
 ---
 title: JSON
 description: JSON(Javascript Object Notation,Javascript 对象表示法),是 JavaScript 的一个严格的子集，利用了 JavaScript 中的一些模式来表示结构化数据结构。
+meta: JavaScript
 ---
 
 # JSON

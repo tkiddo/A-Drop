@@ -1,6 +1,7 @@
 ---
 title: 小程序路由参数
 description: 在页面 onLoad 时获取...
+meta: 微信小程序
 ---
 
 # 小程序路由参数

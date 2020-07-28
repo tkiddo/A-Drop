@@ -1,6 +1,7 @@
 ---
 title: 简单实现 Vue 的响应式系统
 description: Vue 的响应式系统是基于Object.defineProperty实现的，所以先来了解Object.defineProperty是非常有必要的。
+meta: Vue
 ---
 
 # 简单实现 Vue 的响应式系统

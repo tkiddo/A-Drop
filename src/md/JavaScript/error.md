@@ -1,6 +1,7 @@
 ---
 title: Error 类型
 description: javascript Error 类型
+meta: JavaScript
 ---
 
 
