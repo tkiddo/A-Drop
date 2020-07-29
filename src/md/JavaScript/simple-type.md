@@ -1,7 +1,7 @@
 ---
 title: javascript 原始类型
 description: JavaScript 是一种弱类型或者说是动态类型的语言，即在使用过程中不需要事先定义变量的类型，程序在运行过程中会根据实际情况自行决定其类型。
-
+meta: JavaScript
 ---
 
 # javascript 原始类型

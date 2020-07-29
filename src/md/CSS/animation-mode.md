@@ -1,6 +1,7 @@
 ---
 title: css 动画保持最终状态
 description: animation-fill-mode
+meta: CSS
 ---
 
 # css 动画保持最终状态

@@ -1,6 +1,7 @@
 ---
 title: css条纹
 description: 实现方法：CSS 线性渐变
+meta: CSS
 ---
 
 # css条纹

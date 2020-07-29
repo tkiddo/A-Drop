@@ -1,6 +1,7 @@
 ---
 title: 变量提升
 description: 在 JavaScript 中，变量提升是很常见的现象.
+meta: JavaScript
 ---
 
 # 变量提升

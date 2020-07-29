@@ -1,6 +1,7 @@
 ---
 title: SVG
 description: 可缩放矢量图形（Scalable Vector Graphics，SVG），是一种用于描述基于二维的矢量图形的，基于 XML 的标记语言。
+meta: HTML
 ---
 
 # SVG

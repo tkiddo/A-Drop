@@ -1,6 +1,7 @@
 ---
 title: call,apply
 description: javascript中call和apply的应用场景及原理实现
+meta: JavaScript
 ---
 
 # call，apply 

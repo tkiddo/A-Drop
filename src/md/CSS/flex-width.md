@@ -1,6 +1,7 @@
 ---
 title: flex布局
 description: 举个例子：左边元素定宽，右边元素占满余下部分
+meta: CSS
 ---
 
 # flex布局

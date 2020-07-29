@@ -1,6 +1,7 @@
 ---
 title: 小程序登录
 description: 即先发起 wx.login 请求，得到 code 后经第三方服务器想微信服务器发送请求获取 openid，assessToken 等敏感信息，这里我们需要以 assessToken 作为登录状态保持的依据。
+meta: 微信小程序
 ---
 
 ## 小程序登录流程

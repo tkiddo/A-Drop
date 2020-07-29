@@ -1,6 +1,7 @@
 ---
 title: 原生 JS 实现 new 方法
 description: 原生 JS 实现 new 方法
+meta: JavaScript
 ---
 
 # 原生 JS 实现 new 方法

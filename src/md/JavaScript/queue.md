@@ -1,6 +1,7 @@
 ---
 title: 队列
 description: 队列是一种特殊的线性表，特殊之处在于它只允许在表的前端（front）进行删除操作，而在表的后端（rear）进行插入操作（first in first out ,FIFO），和栈一样，队列是一种操作受限制的线性表。
+meta: JavaScript
 ---
 
 # 队列

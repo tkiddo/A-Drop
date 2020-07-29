@@ -1,6 +1,7 @@
 ---
 title: CSS 盒模型
 description: 当对一个文档进行布局（lay out）的时候，浏览器的渲染引擎会根据标准之一的 CSS 基础框盒模型（CSS basic box model），将所有元素表示为一个个矩形的盒子（box）。
+meta: CSS
 ---
 
 # CSS 盒模型

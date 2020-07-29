@@ -1,6 +1,7 @@
 ---
 title: JSX
 description: JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式比较像是模版语言，但事实上完全是在 JavaScript 内部实现的。
+meta: React
 ---
 
 # JSX

@@ -1,6 +1,7 @@
 ---
 title: 闭包
 description: 函数与对其状态即词法环境（lexical environment）的引用共同构成闭包（closure）
+meta: JavaScript
 ---
 
 # 闭包
