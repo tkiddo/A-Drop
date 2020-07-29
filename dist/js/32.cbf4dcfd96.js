@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[32],{177:function(e,t,n){const o=n(0);e.exports=function(e){Object.keys(e).forEach((function(t){this[t]=e[t]}));return o.createElement("section",{className:"markdown"},o.createElement("h4",null,"import"),o.createElement("p",null,"https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import"))}}}]);
-//# sourceMappingURL=32.cbf4dcfd96.js.map
