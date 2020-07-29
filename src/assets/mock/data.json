@@ -3,12 +3,21 @@
 		"CSS": [
 			{
 				"dir": "CSS",
+				"path": "CSS_BFC.md",
+				"name": "BFC.md",
+				"title": "BFC",
+				"description": "块格式化上下文（Block Formatting Context，BFC） 是 Web 页面的可视化 CSS 渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域",
+				"meta": "CSS",
+				"ctime": "2020-07-29T07:54:52.235Z"
+			},
+			{
+				"dir": "CSS",
 				"path": "CSS_box-model.md",
 				"name": "box-model.md",
 				"title": "CSS 盒模型",
 				"description": "当对一个文档进行布局（lay out）的时候，浏览器的渲染引擎会根据标准之一的 CSS 基础框盒模型（CSS basic box model），将所有元素表示为一个个矩形的盒子（box）。",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:23.261Z"
+				"ctime": "2020-07-29T07:54:52.237Z"
 			},
 			{
 				"dir": "CSS",
@@ -17,7 +26,7 @@
 				"title": "你不知道的css边框",
 				"description": "css边框的更多秘密",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:29.061Z"
+				"ctime": "2020-07-29T07:54:52.238Z"
 			},
 			{
 				"dir": "CSS",
@@ -26,7 +35,7 @@
 				"title": "css实现椭圆",
 				"description": "对于border-radius，有一个鲜为人知的知识点：它可以单独指定水平和垂直半径，只要用一个斜杠（/）分隔开就可以。实现椭圆就要用到这一点。",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:33.154Z"
+				"ctime": "2020-07-29T07:54:52.239Z"
 			},
 			{
 				"dir": "CSS",
@@ -35,7 +44,7 @@
 				"title": "css实现平行四边形",
 				"description": "在使用简单的 skew()进行拉伸后，我们发现其容器的内容也发生了斜向变形，这是我们不希望看到的，解决这个问题的方法主要有嵌套元素法和伪元素法。",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:37.556Z"
+				"ctime": "2020-07-29T07:54:52.240Z"
 			},
 			{
 				"dir": "CSS",
@@ -44,7 +53,7 @@
 				"title": "css条纹",
 				"description": "实现方法：CSS 线性渐变",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:42.102Z"
+				"ctime": "2020-07-29T07:54:52.240Z"
 			},
 			{
 				"dir": "CSS",
@@ -53,7 +62,7 @@
 				"title": "flex布局",
 				"description": "举个例子：左边元素定宽，右边元素占满余下部分",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:46.156Z"
+				"ctime": "2020-07-29T07:54:52.241Z"
 			},
 			{
 				"dir": "CSS",
@@ -62,7 +71,7 @@
 				"title": "关于浮动",
 				"description": "浮动可以理解为让元素脱离标准文档流，漂浮于标准文档流之上，和标准文档流不在一个层次上",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:53.089Z"
+				"ctime": "2020-07-29T07:54:52.242Z"
 			},
 			{
 				"dir": "CSS",
@@ -71,7 +80,7 @@
 				"title": "css 中!important 无效的问题",
 				"description": "css 中!important 无效的问题",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:39:57.511Z"
+				"ctime": "2020-07-29T07:54:52.243Z"
 			},
 			{
 				"dir": "CSS",
@@ -80,7 +89,7 @@
 				"title": "padding 溢出",
 				"description": "在 css 中，当对块级元素设置`width`为 100%时，设置`padding`值会使得该元素的实际宽度为 100%+padding，解决这个问题可以设置`box-sizing`为`border-box`",
 				"meta": "CSS",
-				"ctime": "2020-07-28T13:40:02.406Z"
+				"ctime": "2020-07-29T07:54:52.244Z"
 			}
 		]
 	},
@@ -88,12 +97,21 @@
 		"JavaScript": [
 			{
 				"dir": "JavaScript",
+				"path": "JavaScript_async.md",
+				"name": "async.md",
+				"title": "JS 异步编程",
+				"description": "异步任务就是当执行到某个耗时很长的任务时，后续任务不用等待异步任务执行完毕再执行，等到异步任务完成，浏览器再对异步任务作出响应，即异步任务不会阻塞后续任务。",
+				"meta": "JavaScript",
+				"ctime": "2020-07-29T07:54:52.249Z"
+			},
+			{
+				"dir": "JavaScript",
 				"path": "JavaScript_call-apply.md",
 				"name": "call-apply.md",
 				"title": "call,apply",
 				"description": "javascript中call和apply的应用场景及原理实现",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:32:54.525Z"
+				"ctime": "2020-07-29T07:54:52.250Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -102,7 +120,7 @@
 				"title": "闭包",
 				"description": "函数与对其状态即词法环境（lexical environment）的引用共同构成闭包（closure）",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:32:59.040Z"
+				"ctime": "2020-07-29T07:54:52.251Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -111,7 +129,7 @@
 				"title": "防抖与节流",
 				"description": "在前端开发中，有些事件会持续触发，如 scroll，resize 事件，如果不停地执行处理函数，则会大大地消耗浏览器性能。这时就需要防抖或函数来减少执行函数的频率。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:33:06.342Z"
+				"ctime": "2020-07-29T07:54:52.252Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -120,7 +138,7 @@
 				"title": "Error 类型",
 				"description": "javascript Error 类型",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:33:12.444Z"
+				"ctime": "2020-07-29T07:54:52.253Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -129,7 +147,7 @@
 				"title": "事件循环机制",
 				"description": "Javascript 是单线程执行的，出现异步时，并不会阻塞 JS 的执行，而是接着往下执行，等到异步结果返回时再处理。对于这些异步的执行任务，就依靠 JS 的事件循环机制，即 EventLoop。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:33:25.780Z"
+				"ctime": "2020-07-29T07:54:52.254Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -138,7 +156,7 @@
 				"title": "事件流",
 				"description": "事件，就是文档或者浏览器与用户的交互瞬间。简单地说，就是当用户操作时，比如点击按钮，浏览器做出相应的回应。所谓事件流，就是页面中事件接收的顺序。目前，主要有两种事件流，事件冒泡流和事件捕获流。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:33:20.213Z"
+				"ctime": "2020-07-29T07:54:52.255Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -147,7 +165,7 @@
 				"title": "变量提升",
 				"description": "在 JavaScript 中，变量提升是很常见的现象.",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:33:30.804Z"
+				"ctime": "2020-07-29T07:54:52.256Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -156,7 +174,7 @@
 				"title": "JSON",
 				"description": "JSON(Javascript Object Notation,Javascript 对象表示法),是 JavaScript 的一个严格的子集，利用了 JavaScript 中的一些模式来表示结构化数据结构。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:33:43.774Z"
+				"ctime": "2020-07-29T07:54:52.245Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -165,7 +183,7 @@
 				"title": "原生 JS 实现 new 方法",
 				"description": "原生 JS 实现 new 方法",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:37:19.280Z"
+				"ctime": "2020-07-29T07:54:52.256Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -174,7 +192,7 @@
 				"title": "对象和继承",
 				"description": "JavaScript 中对象的创建方式有以下几种...",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:37:25.619Z"
+				"ctime": "2020-07-29T07:54:52.247Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -183,7 +201,7 @@
 				"title": "单向链表",
 				"description": "单向链表（单链表）是链表的一种，其特点是链表的链接方向是单向的，对链表的访问要通过顺序读取从头部开始；链表是使用指针进行构造的列表",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:37:38.728Z"
+				"ctime": "2020-07-29T07:54:52.257Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -192,7 +210,7 @@
 				"title": "Promise(一)",
 				"description": "在 JavaScript 中，所有代码都是单线程执行的。由于这个原因，很多情况下都需要异步操作。比如一些耗时的操作，无需等待操作完成，即可运行接下来的代码，等操作完成时执行相应的回调操作，ajax 就是典型的例子",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:37:43.713Z"
+				"ctime": "2020-07-29T07:54:52.248Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -201,7 +219,7 @@
 				"title": "根据Promises/A+规范实现Promise",
 				"description": "promise构造器接收一个被称为执行器的函数，该函数会被传递两个函数作为参数，一个是成功时调用的函数resolve,一个是失败是调用的函数reject。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:37:51.258Z"
+				"ctime": "2020-07-29T07:54:52.258Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -210,7 +228,7 @@
 				"title": "什么是原型",
 				"description": "在声明了一个函数之后，浏览器会自动为这个函数创建一个对象，这个对象就是原型对象。每个函数都有一个`prototype`属性，该属性指向原型对象，这个原型对象中包含一个`constructor`属性，该属性指向函数本身。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:37:55.834Z"
+				"ctime": "2020-07-29T07:54:52.259Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -219,7 +237,7 @@
 				"title": "队列",
 				"description": "队列是一种特殊的线性表，特殊之处在于它只允许在表的前端（front）进行删除操作，而在表的后端（rear）进行插入操作（first in first out ,FIFO），和栈一样，队列是一种操作受限制的线性表。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:38:00.455Z"
+				"ctime": "2020-07-29T07:54:52.260Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -228,7 +246,7 @@
 				"title": "作用域",
 				"description": "官方解释作用域：‘一段程序代码中所用到的名字并不总是有效/可用的，而限定这个名字的可用性的代码范围就是这个名字的作用域。’",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:38:17.112Z"
+				"ctime": "2020-07-29T07:54:52.261Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -237,7 +255,7 @@
 				"title": "浅拷贝与深拷贝",
 				"description": "JavaScript 中的数据类型主要分为原始数据类型（`Number，String，Boolean，Null，Undefined，Symbol`）和引用类型（`Object`）。深拷贝和浅拷贝主要是针对引用类型的，即在拷贝一个对象时，对于对象中属性值是对象的情况，浅拷贝复制的是对象的引用，深拷贝会复制对象的值。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:38:21.881Z"
+				"ctime": "2020-07-29T07:54:52.262Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -246,7 +264,7 @@
 				"title": "javascript 原始类型",
 				"description": "JavaScript 是一种弱类型或者说是动态类型的语言，即在使用过程中不需要事先定义变量的类型，程序在运行过程中会根据实际情况自行决定其类型。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:38:27.602Z"
+				"ctime": "2020-07-29T07:54:52.263Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -255,7 +273,7 @@
 				"title": "什么是栈",
 				"description": "栈（stack）又名堆栈，它是一种运算受限的线性表。限定仅在表尾进行插入和删除操作的线性表。",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:38:31.648Z"
+				"ctime": "2020-07-29T07:54:52.264Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -264,7 +282,7 @@
 				"title": "this 指向什么",
 				"description": "JavaScript 中，任何函数本质上是通过对象来调用的，如果没有直接指定，就是window对象",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:38:13.245Z"
+				"ctime": "2020-07-29T07:54:52.265Z"
 			},
 			{
 				"dir": "JavaScript",
@@ -273,10 +291,28 @@
 				"title": "JS 中的类型转换",
 				"description": "JS 中的类型转换",
 				"meta": "JavaScript",
-				"ctime": "2020-07-28T13:38:31.648Z"
+				"ctime": "2020-07-29T07:54:52.266Z"
 			}
 		],
 		"React": [
+			{
+				"dir": "JavaScript",
+				"path": "JavaScript_DomRender.md",
+				"name": "DomRender.md",
+				"title": "实现一个简易的react(二):组件渲染",
+				"description": "实现一个简易版的 react（不含fiber架构），仅仅为了表达思想，可能有多处不严谨。",
+				"meta": "React",
+				"ctime": "2020-07-29T07:52:43.238Z"
+			},
+			{
+				"dir": "JavaScript",
+				"path": "JavaScript_JSX.md",
+				"name": "JSX.md",
+				"title": "JSX",
+				"description": "JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式比较像是模版语言，但事实上完全是在 JavaScript 内部实现的。",
+				"meta": "React",
+				"ctime": "2020-07-29T07:54:52.246Z"
+			},
 			{
 				"dir": "JavaScript",
 				"path": "JavaScript_react-getPixColor.md",
@@ -284,13 +320,50 @@
 				"title": "React实现提取图片像素颜色值",
 				"description": "react canvas getImageData()",
 				"meta": "React",
-				"ctime": "2020-07-28T13:38:09.598Z"
+				"ctime": "2020-07-29T07:54:52.260Z"
+			},
+			{
+				"dir": "JavaScript",
+				"path": "JavaScript_updateComponent.md",
+				"name": "updateComponent.md",
+				"title": "实现一个简易的react(三):生命周期和组件更新",
+				"description": "实现一个简易版的 react（不含fiber架构），仅仅为了表达思想，可能有多处不严谨。",
+				"meta": "React",
+				"ctime": "2020-07-29T07:52:43.241Z"
+			},
+			{
+				"dir": "JavaScript",
+				"path": "JavaScript_Vdom.md",
+				"name": "Vdom.md",
+				"title": "实现一个简易的react(一):虚拟DOM",
+				"description": "实现一个简易版的 react（不含fiber架构），仅仅为了表达思想，可能有多处不严谨。",
+				"meta": "React",
+				"ctime": "2020-07-29T07:52:43.243Z"
 			}
 		],
-		"Vue": []
+		"Vue": [
+			{
+				"dir": "JavaScript",
+				"path": "JavaScript_vue-act.md",
+				"name": "vue-act.md",
+				"title": "简单实现 Vue 的响应式系统",
+				"description": "Vue 的响应式系统是基于Object.defineProperty实现的，所以先来了解Object.defineProperty是非常有必要的。",
+				"meta": "Vue",
+				"ctime": "2020-07-29T07:54:52.266Z"
+			}
+		]
 	},
 	"Others": {
 		"微信小程序": [
+			{
+				"dir": "Others",
+				"path": "Others_global-style-in-component.md",
+				"name": "global-style-in-component.md",
+				"title": "组件应用全局样式",
+				"description": "addGlobalClass",
+				"meta": "微信小程序",
+				"ctime": "2020-07-29T07:54:52.269Z"
+			},
 			{
 				"dir": "Others",
 				"path": "Others_token-login.md",
@@ -298,7 +371,7 @@
 				"title": "小程序登录",
 				"description": "即先发起 wx.login 请求，得到 code 后经第三方服务器想微信服务器发送请求获取 openid，assessToken 等敏感信息，这里我们需要以 assessToken 作为登录状态保持的依据。",
 				"meta": "微信小程序",
-				"ctime": "2020-07-28T13:41:01.160Z"
+				"ctime": "2020-07-29T07:54:52.273Z"
 			},
 			{
 				"dir": "Others",
@@ -307,7 +380,7 @@
 				"title": "wxss中运用css变量",
 				"description": "--main-color:green;",
 				"meta": "微信小程序",
-				"ctime": "2020-07-28T13:41:06.265Z"
+				"ctime": "2020-07-29T07:54:52.274Z"
 			},
 			{
 				"dir": "Others",
@@ -316,11 +389,30 @@
 				"title": "小程序路由参数",
 				"description": "在页面 onLoad 时获取...",
 				"meta": "微信小程序",
-				"ctime": "2020-07-28T13:41:13.293Z"
+				"ctime": "2020-07-29T07:54:52.274Z"
 			}
 		],
-		"Web": [],
+		"Web": [
+			{
+				"dir": "Others",
+				"path": "Others_HTTP-basic.md",
+				"name": "HTTP-basic.md",
+				"title": "HTTP 基本知识",
+				"description": "网址，准确地说是 URL（Uniform Resource Locator，统一资源定位符）。",
+				"meta": "Web",
+				"ctime": "2020-07-29T07:54:52.267Z"
+			}
+		],
 		"HTML": [
+			{
+				"dir": "Others",
+				"path": "Others_image-layout.md",
+				"name": "image-layout.md",
+				"title": "HTML 中有关图片处理的几种情况",
+				"description": "背景大图,图片在固定宽高的框中居中显示...",
+				"meta": "HTML",
+				"ctime": "2020-07-29T07:54:52.270Z"
+			},
 			{
 				"dir": "Others",
 				"path": "Others_image-preview.md",
@@ -328,7 +420,7 @@
 				"title": "前端实现图片预览",
 				"description": "在选择图片文件后，能即时预览图片",
 				"meta": "HTML",
-				"ctime": "2020-07-28T13:41:22.566Z"
+				"ctime": "2020-07-29T07:54:52.270Z"
 			},
 			{
 				"dir": "Others",
@@ -337,7 +429,7 @@
 				"title": "meta 标签的常见应用",
 				"description": "meta 标签 HTML 语言 head 区域的一个辅助性标签，常用于定义页面的说明，关键字等元数据。",
 				"meta": "HTML",
-				"ctime": "2020-07-28T13:41:22.565Z"
+				"ctime": "2020-07-29T07:54:52.271Z"
 			},
 			{
 				"dir": "Others",
@@ -346,7 +438,7 @@
 				"title": "SVG",
 				"description": "可缩放矢量图形（Scalable Vector Graphics，SVG），是一种用于描述基于二维的矢量图形的，基于 XML 的标记语言。",
 				"meta": "HTML",
-				"ctime": "2020-07-28T13:41:22.565Z"
+				"ctime": "2020-07-29T07:54:52.272Z"
 			}
 		]
 	},
@@ -354,15 +446,33 @@
 		"Git": [
 			{
 				"dir": "Tools",
+				"path": "Tools_git-change-remote.md",
+				"name": "git-change-remote.md",
+				"title": "git 更换远程仓库",
+				"description": "git remote origin set-url [url]",
+				"meta": "Git",
+				"ctime": "2020-07-29T07:54:52.277Z"
+			},
+			{
+				"dir": "Tools",
 				"path": "Tools_Git-order.md",
 				"name": "Git-order.md",
 				"title": "git 命令",
 				"description": "git 常用命令",
 				"meta": "Git",
-				"ctime": "2020-07-28T13:42:46.019Z"
+				"ctime": "2020-07-29T07:54:52.276Z"
 			}
 		],
 		"webpack": [
+			{
+				"dir": "Tools",
+				"path": "Tools_webpack-better.md",
+				"name": "webpack-better.md",
+				"title": "webpack 性能优化",
+				"description": "webpack 性能优化",
+				"meta": "webpack",
+				"ctime": "2020-07-29T07:54:52.277Z"
+			},
 			{
 				"dir": "Tools",
 				"path": "Tools_webpack-dev.md",
@@ -370,7 +480,7 @@
 				"title": "webpack 入门",
 				"description": "webpack 开发环境配置",
 				"meta": "webpack",
-				"ctime": "2020-07-28T13:43:01.122Z"
+				"ctime": "2020-07-29T07:54:52.278Z"
 			},
 			{
 				"dir": "Tools",
@@ -379,7 +489,7 @@
 				"title": "webpack 生产环境配置",
 				"description": "webpack production",
 				"meta": "webpack",
-				"ctime": "2020-07-28T13:43:00.818Z"
+				"ctime": "2020-07-29T07:54:52.279Z"
 			}
 		]
 	}

@@ -41,7 +41,8 @@
         "after"
       ],
       "react/no-array-index-key": 2,
-      "comma-dangle": 0
+      "comma-dangle": 0,
+      "object-curly-newline": 0
     },
     "env": {
       "browser": true
