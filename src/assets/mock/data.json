@@ -279,6 +279,15 @@
 		"React": [
 			{
 				"dir": "JavaScript",
+				"path": "JavaScript_JSX.md",
+				"name": "JSX.md",
+				"title": "JSX",
+				"description": "JSX 是一种 JavaScript 的语法扩展，运用于 React 架构中，其格式比较像是模版语言，但事实上完全是在 JavaScript 内部实现的。",
+				"meta": "React",
+				"ctime": "2020-07-28T13:37:15.199Z"
+			},
+			{
+				"dir": "JavaScript",
 				"path": "JavaScript_react-getPixColor.md",
 				"name": "react-getPixColor.md",
 				"title": "React实现提取图片像素颜色值",
