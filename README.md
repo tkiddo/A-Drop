@@ -1,6 +1,6 @@
 # A Drop
 
-[传送门](https://justforfunmy.github.io/A-Drop/#/)
+[点击前往博客地址](https://justforfunmy.github.io/A-Drop/#/)
 
 ## 类目
 

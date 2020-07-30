@@ -7,11 +7,10 @@ function formatJson(json) {
   json.forEach((item) => {
     const { dir, meta } = item;
     if (result[dir]) {
-      if (result[dir][meta]) {
-        result[dir][meta].push(item);
-      } else {
+      if (!result[dir][meta]) {
         result[dir][meta] = [];
       }
+      result[dir][meta].push(item);
     } else {
       result[dir] = {};
     }

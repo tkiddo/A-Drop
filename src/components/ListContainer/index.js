@@ -14,15 +14,18 @@ const ListContainer = (props) => {
     markdown: { all }
   } = props;
 
-  const visiableList = all.filter((item) => item.meta === params.filter);
+  const visiableList = all[params.filter];
   return (
     <>
-      {visiableList.map((item) => {
-        const {
-          title, description, path, name
-        } = item;
-        return <ListItem title={title} description={description} path={path} name={name} />;
-      })}
+      {Object.keys(visiableList).map((dir) => (
+        <div>
+          <div className="list-dir">{dir}</div>
+          {visiableList[dir].map((item) => {
+            const { title, description, path, name } = item;
+            return <ListItem title={title} description={description} path={path} name={name} />;
+          })}
+        </div>
+      ))}
     </>
   );
 };
