@@ -4,7 +4,7 @@ description: css边框的更多秘密
 meta: CSS
 ---
 
-# 你不知道的css边框
+# 你不知道的 css 边框
 
 ## 1.默认情况下，背景会延伸至边框所在的区域下层。
 
@@ -21,8 +21,11 @@ meta: CSS
 ```
 
 以上 css 样式在浏览器上的展示是这样子的，并没有出现半透明的边框：
+
 ![半透明未出现](../../assets/images/md/border-not-show.png)
+
 **解决办法**：`background-clip`,初始值为`border-box`,即背景会被元素的`border-box`裁切掉，如果不希望背景入侵边框所在的范围，就把它的值设定为`padding-box`,以上代码取消注释即可，效果是这样的：
+
 ![半透明边框出现](../../assets/images/md/border-show.png)
 
 ## 2.多重边框
@@ -35,12 +38,17 @@ meta: CSS
 box-shadow: h-shadow v-shadow blur spread color inset;
 ```
 
-        h-shadow	必需。水平阴影的位置。允许负值。
-        v-shadow	必需。垂直阴影的位置。允许负值。
-        blur	可选。模糊距离。
-        spread	可选。阴影的尺寸。
-        color	可选。阴影的颜色。
-        inset	可选。将外部阴影 (outset) 改为内部阴影。
+h-shadow 必需。水平阴影的位置。允许负值。
+
+v-shadow 必需。垂直阴影的位置。允许负值。
+
+blur 可选。模糊距离。
+
+spread 可选。阴影的尺寸。
+
+color 可选。阴影的颜色。
+
+inset 可选。将外部阴影 (outset) 改为内部阴影。
 
 **box-shadow 的好处在于可以用逗号分隔，可以创建任意数量的投影。**
 例如：

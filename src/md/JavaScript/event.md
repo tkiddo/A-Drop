@@ -124,9 +124,15 @@ inner[0].addEventListener(
 ```
 
 ![事件案例.jpg](../../assets/images/md/event-demo.png)
+
 `addEventListener`最后这个布尔值参数如果是`true`，表示**在捕获阶段调用事件处理程序**；如果是`false`，表示**在冒泡阶段调用事件处理程序**。默认为`false`。
+
 当`capture`为`true`时，采用的是捕获事件流,即事件从外向里传播，当我们点击最里层的`div`，控制台输出如图所示：
+
 ![事件捕获案例.jpg](../../assets/images/md/event-catch-demo.png)
+
 当`capture`为`false`时，采用的是冒泡事件流,即事件从里向外传播，当我们点击最里层的`div`，控制台输出如图所示：
+
 ![事件冒泡案例.jpg](../../assets/images/md/event-bubble-demo.png)
+
 由于老版本的浏览器不支持，因此很少有人使用事件捕获。我们也建议读者放心地使用事件冒泡，在有特殊需要时再使用事件捕获。

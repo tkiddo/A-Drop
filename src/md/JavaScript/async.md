@@ -81,7 +81,7 @@ fetch('./data.json')
   });
 ```
 
-`Promise`通过链式调用解决了回调地域的问题，也能很好地捕获错误，细节参见我的博客[根据`Promises/A+`规范实现`Promise`](https://github.com/justforfunmy/Notebook/blob/master/md/JavaScript/promiseA+.md)
+`Promise`通过链式调用解决了回调地域的问题，也能很好地捕获错误，细节参见我的博客[根据`Promises/A+`规范实现`Promise`](https://justforfunmy.github.io/A-Drop/#/md/JavaScript_promiseA+.md)
 
 - 生成器 Generators/ yield
 

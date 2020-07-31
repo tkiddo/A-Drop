@@ -25,7 +25,6 @@ BFC 可以用来解决 css 中的许多问题：
 当父元素内的子元素浮动后，即子元素脱离了文档流，此时父元素的高度不能撑开，造成高度塌陷。
 
 ```css
-//css
 .box {
   background-color: rgb(224, 206, 247);
   border: 5px solid rebeccapurple;

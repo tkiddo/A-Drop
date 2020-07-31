@@ -1,1 +1,9 @@
+@import '../../assets/styles/color.scss';
 
+.modal-loading {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: $dark;
+  font-size: 30px;
+}

@@ -114,7 +114,7 @@
     "prettier-eslint": "^11.0.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
-    "sliver-md-loader": "^1.0.5",
+    "sliver-md-loader": "^1.0.7",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",

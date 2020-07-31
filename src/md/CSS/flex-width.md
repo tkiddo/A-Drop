@@ -1,10 +1,10 @@
 ---
-title: flex布局
+title: flex布局中的宽度
 description: 举个例子：左边元素定宽，右边元素占满余下部分
 meta: CSS
 ---
 
-# flex布局
+# flex 布局中的宽度
 
 ## 举个例子：左边元素定宽，右边元素占满余下部分
 
@@ -182,11 +182,11 @@ flex 属性是 `flex-grow`, `flex-shrink` 和 `flex-basis` 的简写，默认值
 ```
 
 1. 当设置 box 的 flex-shrink 为 0 时，即不论超出多少，都不压缩子元素的空间，如下图
-![3.png](../../assets/images/md/flex-3.png) 
+   ![3.png](../../assets/images/md/flex-3.png)
 2. 当每个 box 设置 flex-shrink 为 1 时，即三个 box 压缩同样的比例，如下图
-![4.png](../../assets/images/md/flex-4.png) 
+   ![4.png](../../assets/images/md/flex-4.png)
 3. 当给每个 box 设置 flex-shrink 依次为 1,2,3 时，子元素会按照比例来压缩，如图
-![5.png](../../assets/images/md/flex-5.png)
+   ![5.png](../../assets/images/md/flex-5.png)
 
 - `flex-basis`
 
