@@ -25,7 +25,7 @@ const NavMenu = () => {
   return (
     <>
       <h3 className="menu-title">A Drop</h3>
-      <h5 className="menu-sub-title">Pay attention to learning everywhere.</h5>
+      {/* <h5 className="menu-sub-title">Pay attention to learning everywhere.</h5> */}
       <MenuContainer>
         {menu.map((item) => (
           <MenuPane name={item.name} info={item.info} key={item.name} />
