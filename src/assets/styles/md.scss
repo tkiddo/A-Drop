@@ -6,12 +6,16 @@
   letter-spacing: 0.5px;
   padding: 30px 0;
   max-width: 100%;
+  word-break: break-all;
   code {
     padding: 0 10px;
     color: $main;
     background: #fafafa;
     font-weight: 700;
     margin: 5px 0;
+    // word-wrap: break-word;
+    // word-break: break-all;
+    overflow-x: auto;
   }
 
   img {
