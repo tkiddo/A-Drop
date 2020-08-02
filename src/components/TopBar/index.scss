@@ -1,18 +1,22 @@
 @import '../../assets/styles/color.scss';
 
-.top-bar {
-  width: 100%;
+.top-bar-container {
   height: 52px;
-  margin-right: calc(100%-100vw);
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  z-index: 1000;
+  background-color: #fff;
+  margin-right: calc(100% - 100vw);
+}
+.top-bar {
+  width: 900px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-left: 10%;
-  background-color: #fff;
-  z-index: 1000;
+  height: 100%;
   .logo {
     width: 45px;
   }
@@ -20,5 +24,17 @@
     color: $main;
     font-size: 24px;
     padding: 0 10px;
+  }
+  .top-nav {
+    flex: 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    .top-nav-item > a {
+      color: $main;
+      font-weight: 500;
+      &:hover {
+        color: $second;
+      }
+    }
   }
 }
