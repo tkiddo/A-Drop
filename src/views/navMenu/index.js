@@ -6,19 +6,23 @@ import MenuPane from '../../components/Menu/MenuPane';
 const NavMenu = () => {
   const menu = [
     {
-      name: 'JavaScript',
+      dir: 'JavaScript',
+      name: 'Javascript相关',
       info: 'JavaScript,TypeScript,React ...'
     },
     {
-      name: 'CSS',
+      dir: 'CSS',
+      name: 'CSS相关',
       info: 'Styles,Scss,Less,Stylus ...'
     },
     {
-      name: 'Tools',
+      dir: 'Tools',
+      name: '开发工具',
       info: 'Eslint,Webpack,Git ...'
     },
     {
-      name: 'Others',
+      dir: 'Others',
+      name: '其他Web相关',
       info: 'Ajax,Http,Html ...'
     }
   ];
@@ -28,7 +32,7 @@ const NavMenu = () => {
       {/* <h5 className="menu-sub-title">Pay attention to learning everywhere.</h5> */}
       <MenuContainer>
         {menu.map((item) => (
-          <MenuPane name={item.name} info={item.info} key={item.name} />
+          <MenuPane name={item.name} info={item.info} key={item.name} dir={item.dir} />
         ))}
       </MenuContainer>
     </>

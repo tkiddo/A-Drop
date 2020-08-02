@@ -7,12 +7,12 @@ import AppRoutes from './route/appRoutes';
 
 function App() {
   return (
-    <div>
+    <>
       <TopBar />
       <MainContainer>
         <AppRoutes />
       </MainContainer>
-    </div>
+    </>
   );
 }
 

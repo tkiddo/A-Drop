@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -21,7 +22,11 @@ class ErrorBoundary extends React.Component {
     const { children } = this.props;
     if (hasError) {
       // 你可以自定义降级后的 UI 并渲染
-      return <h1>Something went wrong.</h1>;
+      return (
+        <div className="error-container">
+          <h1>Something went wrong.</h1>
+        </div>
+      );
     }
 
     return children;

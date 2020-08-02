@@ -1,0 +1,9 @@
+@import '../../assets/styles/color.scss';
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  color: $dark;
+}

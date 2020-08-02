@@ -3,9 +3,9 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 
 const MenuPane = (props) => {
-  const { name } = props;
+  const { name, dir } = props;
   return (
-    <Link className="menu-pane" to={`/${name}`}>
+    <Link className="menu-pane" to={`/${dir}`}>
       <span>{name}</span>
       {/* <div className="menu-hover-modal">
         <span>{info}</span>
