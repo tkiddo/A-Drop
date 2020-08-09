@@ -115,14 +115,73 @@ function useEffect(callback, depArray) {
   const hasDepChanged = deps ? !depArray.every((el, i) => deps[i] === el) : true;
   // 如果没有依赖货值依赖改变则执行回调函数，并保存当前依赖值
   if (hasNoDeps || hasDepChanged) {
-    callback();
     memorizedState[cursor] = depArray;
+    callback();
   }
   cursor++;
 }
 ```
 
 我们可以发现，当第二个参数是空数组时，依赖一直不会变化，回调函数只会执行一次，就相当于生命周期函数`componentDidMount`
+
+## 单独的 memorizedState
+
+以上的实现还有一个问题，就是多个组件共用了一个 memorizedState,所以单个组件内没有问题，多个组件就会导致状态混乱。可以将 memorizedState 挂载到每个组件的实例上去，单独维护。
+
+```js
+//react component
+export default class Component {
+  constructor(props) {
+    this.props = props;
+    this.memorizedState = [];
+    this.cursor = 0;
+  }
+
+  render() {}
+}
+```
+
+重新修改下 hooks 的实现
+
+```js
+function useState(initialState) {
+  const comp = window.currentComponent;
+  //获取单独的状态集合
+  const { memorizedState, cursor } = comp;
+  memorizedState[cursor] = memorizedState[cursor] || initialState;
+  const currentCursor = cursor;
+  function setState(stateChange) {
+    memorizedState[currentCursor] = stateChange;
+    renderComponent(comp);
+  }
+  return [memorizedState[comp.cursor++], setState];
+}
+
+function useEffect(callback, depArray) {
+  const comp = window.currentComponent;
+  const { memorizedState, cursor } = comp;
+  const hasNoDeps = !depArray;
+  const deps = memorizedState[cursor];
+  const hasDepChanged = deps ? !depArray.every((el, i) => deps[i] === el) : true;
+  if (hasNoDeps || hasDepChanged) {
+    memorizedState[cursor] = depArray;
+    callback();
+  }
+  comp.cursor++;
+}
+```
+
+此处需要在 renderComponent 函数执行时将组件的 cursor 置零，以保证渲染时从头开始执行 hooks
+
+```js
+function renderComponent(component) {
+  // hooks的cursor置零，按顺序从头执行hook
+  component.cursor = 0;
+  //...
+}
+```
+
+这样，hooks 基本实现了
 
 参考文章：
 
