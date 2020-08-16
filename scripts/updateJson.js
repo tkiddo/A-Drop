@@ -35,7 +35,13 @@ function getJsonFiles(jsonPath) {
           const {
             attributes: { title, description, meta }
           } = content;
-          fPath = fPath.replace(/\\/g, '_').substr(3);
+
+          const pathArray = fPath.split('md\\');
+          // eslint-disable-next-line prefer-destructuring
+          fPath = pathArray[1];
+
+          fPath = fPath.replace(/\\/g, '_');
+
           jsonFiles.push({
             dir: fPath.split('_')[0],
             path: fPath,
@@ -52,15 +58,14 @@ function getJsonFiles(jsonPath) {
 
   findJsonFile(jsonPath);
 
-  console.log(jsonFiles.length);
-
   const str = JSON.stringify(formatJson(jsonFiles), null, '\t');
 
-  fs.writeFile(resolve(__dirname, 'assets/mock/data.json'), str, (err) => {
+  fs.writeFile(resolve(process.cwd(), 'src/assets/mock/data.json'), str, (err) => {
+    console.log('文件数量:', jsonFiles.length);
     if (err) {
       console.log('error...');
     }
   });
 }
 
-getJsonFiles('md');
+getJsonFiles(join(process.cwd(), 'src/md'));

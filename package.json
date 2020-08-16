@@ -8,7 +8,9 @@
     "initJson": "node ./src/getFile.js",
     "build": "webpack --progress --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
-    "build-react": "webpack --progress --config webpack.react.js"
+    "build-react": "webpack --progress --config webpack.react.js",
+    "readme": "node scripts/updateReadme.js",
+    "json": "node scripts/updateJson.js"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
