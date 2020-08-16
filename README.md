@@ -2,8 +2,6 @@
 
 ## CSS
 
-## CSS
-
 - [BFC](https://github.com/justforfunmy/A-Drop/blob/master/src/md/CSS/BFC.md)
 - [CSS 盒模型](https://github.com/justforfunmy/A-Drop/blob/master/src/md/CSS/box-model.md)
 - [你不知道的 css 边框](https://github.com/justforfunmy/A-Drop/blob/master/src/md/CSS/css-border.md)
@@ -15,8 +13,6 @@
 - [css 中!important 无效的问题](https://github.com/justforfunmy/A-Drop/blob/master/src/md/CSS/important-not-work.md)
 - [padding 溢出](https://github.com/justforfunmy/A-Drop/blob/master/src/md/CSS/padding-overflow.md)
 - [滚动条挤压内容宽度的解决办法](https://github.com/justforfunmy/A-Drop/blob/master/src/md/CSS/scroll-bar-width.md)
-
-## JavaScript
 
 ## JavaScript
 
@@ -59,8 +55,6 @@
 
 - [简单实现 Vue 的响应式系统](https://github.com/justforfunmy/A-Drop/blob/master/src/md/JavaScript/vue-act.md)
 
-## Others
-
 ## 微信小程序
 
 - [组件应用全局样式](https://github.com/justforfunmy/A-Drop/blob/master/src/md/Others/global-style-in-component.md)
@@ -79,8 +73,6 @@
 - [HTML 中超大数据量的渲染性能优化](https://github.com/justforfunmy/A-Drop/blob/master/src/md/Others/large-data-render.md)
 - [meta 标签的常见应用](https://github.com/justforfunmy/A-Drop/blob/master/src/md/Others/meta.md)
 - [SVG](https://github.com/justforfunmy/A-Drop/blob/master/src/md/Others/svg.md)
-
-## Tools
 
 ## Git
 

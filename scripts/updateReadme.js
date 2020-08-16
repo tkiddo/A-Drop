@@ -23,8 +23,10 @@ function getData(data) {
   } else {
     Object.keys(data).forEach((key) => {
       const element = data[key];
-      if (!element.title) {
+      if (Array.isArray(element)) {
         appendFile(`## ${key} \n`);
+      }
+      if (!element.title) {
         getData(data[key]);
       }
     });
