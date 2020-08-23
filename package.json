@@ -10,7 +10,8 @@
     "start": "webpack-dev-server --config webpack.dev.js",
     "build-react": "webpack --progress --config webpack.react.js",
     "readme": "node scripts/updateReadme.js",
-    "json": "node scripts/updateJson.js"
+    "json": "node scripts/updateJson.js",
+    "page": "git subtree push --prefix=dist origin gh-pages"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
