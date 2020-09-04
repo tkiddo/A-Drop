@@ -408,6 +408,62 @@
 		]
 	},
 	"Others": {
+		"HTML": [
+			{
+				"dir": "Others",
+				"path": "Others_canvas-game.md",
+				"name": "canvas-game.md",
+				"title": "使用 canvas 开发 flappy bird",
+				"description": "使用 canvas 开发小游戏",
+				"meta": "HTML",
+				"ctime": "2020-09-04T01:38:23.433Z"
+			},
+			{
+				"dir": "Others",
+				"path": "Others_large-data-render.md",
+				"name": "large-data-render.md",
+				"title": "HTML中超大数据量的渲染性能优化",
+				"description": "如何在html中高效地渲染上万条数据",
+				"meta": "HTML",
+				"ctime": "2020-08-25T08:39:12.470Z"
+			},
+			{
+				"dir": "Others",
+				"path": "Others_svg.md",
+				"name": "svg.md",
+				"title": "SVG",
+				"description": "可缩放矢量图形（Scalable Vector Graphics，SVG），是一种用于描述基于二维的矢量图形的，基于 XML 的标记语言。",
+				"meta": "HTML",
+				"ctime": "2020-07-29T07:54:52.272Z"
+			},
+			{
+				"dir": "Others",
+				"path": "Others_meta.md",
+				"name": "meta.md",
+				"title": "meta 标签的常见应用",
+				"description": "meta 标签 HTML 语言 head 区域的一个辅助性标签，常用于定义页面的说明，关键字等元数据。",
+				"meta": "HTML",
+				"ctime": "2020-07-29T07:54:52.271Z"
+			},
+			{
+				"dir": "Others",
+				"path": "Others_image-layout.md",
+				"name": "image-layout.md",
+				"title": "HTML 中有关图片处理的几种情况",
+				"description": "背景大图,图片在固定宽高的框中居中显示...",
+				"meta": "HTML",
+				"ctime": "2020-07-29T07:54:52.270Z"
+			},
+			{
+				"dir": "Others",
+				"path": "Others_image-preview.md",
+				"name": "image-preview.md",
+				"title": "前端实现图片预览",
+				"description": "在选择图片文件后，能即时预览图片",
+				"meta": "HTML",
+				"ctime": "2020-07-29T07:54:52.270Z"
+			}
+		],
 		"微信小程序": [
 			{
 				"dir": "Others",
@@ -455,53 +511,6 @@
 				"description": "网址，准确地说是 URL（Uniform Resource Locator，统一资源定位符）。",
 				"meta": "Web",
 				"ctime": "2020-07-29T07:54:52.267Z"
-			}
-		],
-		"HTML": [
-			{
-				"dir": "Others",
-				"path": "Others_large-data-render.md",
-				"name": "large-data-render.md",
-				"title": "HTML中超大数据量的渲染性能优化",
-				"description": "如何在html中高效地渲染上万条数据",
-				"meta": "HTML",
-				"ctime": "2020-08-25T08:39:12.470Z"
-			},
-			{
-				"dir": "Others",
-				"path": "Others_svg.md",
-				"name": "svg.md",
-				"title": "SVG",
-				"description": "可缩放矢量图形（Scalable Vector Graphics，SVG），是一种用于描述基于二维的矢量图形的，基于 XML 的标记语言。",
-				"meta": "HTML",
-				"ctime": "2020-07-29T07:54:52.272Z"
-			},
-			{
-				"dir": "Others",
-				"path": "Others_meta.md",
-				"name": "meta.md",
-				"title": "meta 标签的常见应用",
-				"description": "meta 标签 HTML 语言 head 区域的一个辅助性标签，常用于定义页面的说明，关键字等元数据。",
-				"meta": "HTML",
-				"ctime": "2020-07-29T07:54:52.271Z"
-			},
-			{
-				"dir": "Others",
-				"path": "Others_image-layout.md",
-				"name": "image-layout.md",
-				"title": "HTML 中有关图片处理的几种情况",
-				"description": "背景大图,图片在固定宽高的框中居中显示...",
-				"meta": "HTML",
-				"ctime": "2020-07-29T07:54:52.270Z"
-			},
-			{
-				"dir": "Others",
-				"path": "Others_image-preview.md",
-				"name": "image-preview.md",
-				"title": "前端实现图片预览",
-				"description": "在选择图片文件后，能即时预览图片",
-				"meta": "HTML",
-				"ctime": "2020-07-29T07:54:52.270Z"
 			}
 		]
 	},
