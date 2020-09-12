@@ -18,8 +18,19 @@ function formatJson(json) {
   return result;
 }
 
+function sortJson(json) {
+  if (Array.isArray(json)) {
+    json.sort((a, b) => new Date(b.ctime) - new Date(a.ctime));
+  } else {
+    Object.keys(json).forEach((key) => {
+      const ele = json[key];
+      sortJson(ele);
+    });
+  }
+}
+
 function getJsonFiles(jsonPath) {
-  const jsonFiles = [];
+  let jsonFiles = [];
   function findJsonFile(path) {
     const files = fs.readdirSync(path);
     files.forEach((item) => {
@@ -58,10 +69,13 @@ function getJsonFiles(jsonPath) {
 
   findJsonFile(jsonPath);
 
-  const str = JSON.stringify(formatJson(jsonFiles), null, '\t');
+  jsonFiles = formatJson(jsonFiles);
+
+  sortJson(jsonFiles);
+
+  const str = JSON.stringify(jsonFiles, null, '\t');
 
   fs.writeFile(resolve(process.cwd(), 'src/assets/mock/data.json'), str, (err) => {
-    console.log('文件数量:', jsonFiles.length);
     if (err) {
       console.log('error...');
     }
