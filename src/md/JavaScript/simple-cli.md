@@ -158,8 +158,8 @@ const handleCreate = (params, options) => {
     .prompt([
       {
         type: 'input',
-        name: 'name',
-        message: 'project name?'
+        name: 'author',
+        message: 'author name?'
       },
       {
         type: 'list',
